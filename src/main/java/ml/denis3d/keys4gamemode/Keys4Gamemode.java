@@ -1,5 +1,7 @@
 package ml.denis3d.keys4gamemode;
 
+import ml.denis3d.keys4gamemode.config.Config;
+import ml.denis3d.keys4gamemode.config.ConfigScreen;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.settings.KeyBinding;
 import net.minecraftforge.api.distmarker.Dist;
@@ -8,11 +10,13 @@ import net.minecraftforge.client.event.InputEvent;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.EventPriority;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.ExtensionPoint;
+import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.client.registry.ClientRegistry;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import org.apache.commons.lang3.ArrayUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.lwjgl.glfw.GLFW;
@@ -32,12 +36,16 @@ public class Keys4Gamemode {
     public static final KeyBinding keyBindTimeSetDay = new KeyBinding("key.timesetday", GLFW.GLFW_KEY_KP_4, "key.categories.keys4gamemode");
     public static final KeyBinding keyBindTimeSetNight = new KeyBinding("key.timesetnight", GLFW.GLFW_KEY_KP_5, "key.categories.keys4gamemode");
     public static final KeyBinding keyBindWeatherClear = new KeyBinding("key.weatherclear", GLFW.GLFW_KEY_KP_6, "key.categories.keys4gamemode");
-    public static KeyBinding[] keyBindings = new KeyBinding[]{keyBindGamemode0, keyBindGamemode1, keyBindGamemode2, keyBindGamemode3, keyBindTimeSetDay, keyBindTimeSetNight, keyBindWeatherClear};
+    public static final KeyBinding keyBindCustom1 = new KeyBinding("key.custom1", GLFW.GLFW_KEY_KP_7, "key.categories.keys4gamemode");
+    public static final KeyBinding keyBindCustom2 = new KeyBinding("key.custom2", GLFW.GLFW_KEY_KP_8, "key.categories.keys4gamemode");
+    public static final KeyBinding keyBindCustom3 = new KeyBinding("key.custom3", GLFW.GLFW_KEY_KP_9, "key.categories.keys4gamemode");
+    public static KeyBinding[] keyBindings = new KeyBinding[]{keyBindGamemode0, keyBindGamemode1, keyBindGamemode2, keyBindGamemode3, keyBindTimeSetDay, keyBindTimeSetNight, keyBindWeatherClear, keyBindCustom1, keyBindCustom2, keyBindCustom3};
 
     public Keys4Gamemode() {
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
-
+        ModLoadingContext.get().registerExtensionPoint(ExtensionPoint.CONFIGGUIFACTORY, () -> ConfigScreen::new);
         MinecraftForge.EVENT_BUS.register(this);
+        ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, Config.CLIENT_SPECS);
     }
 
     private void doClientStuff(final FMLClientSetupEvent event) {
@@ -72,17 +80,29 @@ public class Keys4Gamemode {
 
         if (keyBindings[4].isPressed())
         {
-            Minecraft.getInstance().player.sendChatMessage("/time set day");
+            Minecraft.getInstance().player.sendChatMessage("/time set noon");
         }
 
         if (keyBindings[5].isPressed())
         {
-            Minecraft.getInstance().player.sendChatMessage("/time set night");
+            Minecraft.getInstance().player.sendChatMessage("/time set midnight");
         }
 
         if (keyBindings[6].isPressed())
         {
             Minecraft.getInstance().player.sendChatMessage("/weather clear");
+        }
+
+        if (keyBindings[7].isPressed()) {
+            Minecraft.getInstance().player.sendChatMessage(Config.CLIENT.macroOne.get());
+        }
+
+        if (keyBindings[8].isPressed()) {
+            Minecraft.getInstance().player.sendChatMessage(Config.CLIENT.macroTwo.get());
+        }
+
+        if (keyBindings[9].isPressed()) {
+            Minecraft.getInstance().player.sendChatMessage(Config.CLIENT.macroThree.get());
         }
     }
 }
