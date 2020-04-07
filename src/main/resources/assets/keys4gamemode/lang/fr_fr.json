@@ -1,0 +1,13 @@
+{
+    "key.categories.keys4gamemode": "Keys4Gamemode",
+    "key.gm_survival": "Passer en mode Survie",
+    "key.gm_creative": "Passer en mode Creatif",
+    "key.gm_adventure": "Passer en mode Aventure",
+    "key.gm_spectator": "Passer en mode spectateur",
+    "key.timesetday": "Mettre le jour",
+    "key.timesetnight": "Mettre la nuit",
+    "key.weatherclear": "Mettre le beau temps",
+    "key.custom1": "Touche Macro 1",
+    "key.custom2": "Touche Macro 2",
+    "key.custom3": "Touche Macro 3"
+}

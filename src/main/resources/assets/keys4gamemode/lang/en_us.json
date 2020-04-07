@@ -1,10 +1,13 @@
 {
-  "key.categories.keys4gamemode": "Keys4Gamemode",
-  "key.gm_survival": "Gamemode Survival",
-  "key.gm_creative": "Gamemode Creative",
-  "key.gm_adventure": "Gamemode Adventure",
-  "key.gm_spectator": "Gamemode Spectator",
-  "key.timesetday": "Time Set Day",
-  "key.timesetnight": "Time Set Night",
-  "key.weatherclear": "Weather Clear"
+    "key.categories.keys4gamemode": "Keys4Gamemode",
+    "key.gm_survival": "Gamemode Survival",
+    "key.gm_creative": "Gamemode Creative",
+    "key.gm_adventure": "Gamemode Adventure",
+    "key.gm_spectator": "Gamemode Spectator",
+    "key.timesetday": "Time Set Day",
+    "key.timesetnight": "Time Set Night",
+    "key.weatherclear": "Weather Clear",
+    "key.custom1": "Macro 1",
+    "key.custom2": "Macro 2",
+    "key.custom3": "Macro 3"
 }
