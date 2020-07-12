@@ -1,0 +1,10 @@
+
+# Define here the commands assigned to your macro. You can use the in-game GUI located under the "Config" button of Keys4Gamemode in the forge mod list GUI.
+["Macro Commands"]
+	# Command for the macro one
+	macroTwo = "\"Hello !\""
+	# Command for the macro one
+	macroThree = "/tellraw @s {\"text\":\"This macro isn't configured yet ! Go to the mod option to set it.\"}"
+	# Command for the macro one
+	macroOne = "/kill @s"
+

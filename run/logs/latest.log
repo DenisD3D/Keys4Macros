@@ -1,0 +1,1029 @@
+[12juil.2020 21:15:45.761] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--gameDir, ., --launchTarget, fmluserdevclient, --fml.mcpVersion, 20200625.160719, --fml.mcVersion, 1.16.1, --fml.forgeGroup, net.minecraftforge, --fml.forgeVersion, 32.0.25, --version, MOD_DEV, --assetIndex, 1.15, --assetsDir, C:\Users\thede\.gradle\caches\forge_gradle\assets, --username, Dev, --accessToken, ❄❄❄❄❄❄❄❄, --userProperties, {}]
+[12juil.2020 21:15:45.772] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 5.1.0+69+master.79f13f7 starting: java version 1.8.0_222 by AdoptOpenJDK
+[12juil.2020 21:15:46.322] [main/INFO] [net.minecraftforge.fml.loading.FixSSL/CORE]: Added Lets Encrypt root certificates as additional trust
+[12juil.2020 21:15:49.008] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'fmluserdevclient' with arguments [--version, MOD_DEV, --gameDir, ., --assetsDir, C:\Users\thede\.gradle\caches\forge_gradle\assets, --assetIndex, 1.15, --username, Dev, --accessToken, ❄❄❄❄❄❄❄❄, --userProperties, {}]
+[12juil.2020 21:16:13.882] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', name='PROD'
+[12juil.2020 21:16:13.888] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
+[12juil.2020 21:16:14.648] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.2.2 build 10
+[12juil.2020 21:16:17.812] [modloading-worker-1/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 32.0.25, for MC 1.16.1 with MCP 20200625.160719
+[12juil.2020 21:16:17.813] [modloading-worker-1/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v32.0.25 Initialized
+[12juil.2020 21:16:24.613] [Render thread/INFO] [com.mojang.text2speech.NarratorWindows/]: Narrator library for x64 successfully loaded
+[12juil.2020 21:16:24.829] [Render thread/INFO] [net.minecraft.resources.SimpleReloadableResourceManager/]: Reloading ResourceManager: Default, Mod Resources
+[12juil.2020 21:16:25.051] [Worker-Main-4/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Configuration file C:\Users\thede\IdeaProjects\Keys4Gamemode\run\config\forge-client.toml is not correct. Correcting
+[12juil.2020 21:16:25.052] [Worker-Main-4/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key client.experimentalForgeLightPipelineEnabled was corrected from null to false
+[12juil.2020 21:16:25.276] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/maven/net/minecraftforge/forge/promotions_slim.json
+[12juil.2020 21:16:26.581] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: BETA_OUTDATED Current: 32.0.25 Target: 32.0.63
+[12juil.2020 21:16:39.858] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:ambient.basalt_deltas.additions
+[12juil.2020 21:16:39.858] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:ambient.basalt_deltas.loop
+[12juil.2020 21:16:39.858] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:ambient.basalt_deltas.mood
+[12juil.2020 21:16:39.858] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:ambient.crimson_forest.additions
+[12juil.2020 21:16:39.858] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:ambient.crimson_forest.loop
+[12juil.2020 21:16:39.858] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:ambient.crimson_forest.mood
+[12juil.2020 21:16:39.858] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:ambient.nether_wastes.additions
+[12juil.2020 21:16:39.858] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:ambient.nether_wastes.loop
+[12juil.2020 21:16:39.858] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:ambient.nether_wastes.mood
+[12juil.2020 21:16:39.859] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:ambient.soul_sand_valley.additions
+[12juil.2020 21:16:39.859] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:ambient.soul_sand_valley.loop
+[12juil.2020 21:16:39.859] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:ambient.soul_sand_valley.mood
+[12juil.2020 21:16:39.859] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:ambient.warped_forest.additions
+[12juil.2020 21:16:39.859] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:ambient.warped_forest.loop
+[12juil.2020 21:16:39.859] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:ambient.warped_forest.mood
+[12juil.2020 21:16:39.859] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.ancient_debris.break
+[12juil.2020 21:16:39.859] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.ancient_debris.step
+[12juil.2020 21:16:39.859] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.ancient_debris.place
+[12juil.2020 21:16:39.859] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.ancient_debris.hit
+[12juil.2020 21:16:39.859] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.ancient_debris.fall
+[12juil.2020 21:16:39.859] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:item.armor.equip_netherite
+[12juil.2020 21:16:39.859] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.basalt.break
+[12juil.2020 21:16:39.860] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.basalt.step
+[12juil.2020 21:16:39.860] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.basalt.place
+[12juil.2020 21:16:39.860] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.basalt.hit
+[12juil.2020 21:16:39.860] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.basalt.fall
+[12juil.2020 21:16:39.860] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.bone_block.break
+[12juil.2020 21:16:39.860] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.bone_block.fall
+[12juil.2020 21:16:39.860] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.bone_block.hit
+[12juil.2020 21:16:39.860] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.bone_block.place
+[12juil.2020 21:16:39.860] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.bone_block.step
+[12juil.2020 21:16:39.860] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.chain.break
+[12juil.2020 21:16:39.861] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.chain.fall
+[12juil.2020 21:16:39.861] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.chain.hit
+[12juil.2020 21:16:39.889] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.chain.place
+[12juil.2020 21:16:39.889] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.chain.step
+[12juil.2020 21:16:39.889] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:entity.donkey.eat
+[12juil.2020 21:16:39.889] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:entity.fox.teleport
+[12juil.2020 21:16:39.890] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.roots.break
+[12juil.2020 21:16:39.890] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.roots.step
+[12juil.2020 21:16:39.890] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.roots.place
+[12juil.2020 21:16:39.890] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.roots.hit
+[12juil.2020 21:16:39.890] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.roots.fall
+[12juil.2020 21:16:39.890] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.gilded_blackstone.break
+[12juil.2020 21:16:39.890] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.gilded_blackstone.fall
+[12juil.2020 21:16:39.890] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.gilded_blackstone.hit
+[12juil.2020 21:16:39.890] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.gilded_blackstone.place
+[12juil.2020 21:16:39.890] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.gilded_blackstone.step
+[12juil.2020 21:16:39.890] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:entity.hoglin.ambient
+[12juil.2020 21:16:39.890] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:entity.hoglin.angry
+[12juil.2020 21:16:39.890] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:entity.hoglin.attack
+[12juil.2020 21:16:39.890] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:entity.hoglin.converted_to_zombified
+[12juil.2020 21:16:39.890] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:entity.hoglin.death
+[12juil.2020 21:16:39.890] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:entity.hoglin.hurt
+[12juil.2020 21:16:39.890] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:entity.hoglin.retreat
+[12juil.2020 21:16:39.890] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:entity.hoglin.step
+[12juil.2020 21:16:39.891] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.lodestone.break
+[12juil.2020 21:16:39.891] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.lodestone.step
+[12juil.2020 21:16:39.891] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.lodestone.place
+[12juil.2020 21:16:39.891] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.lodestone.hit
+[12juil.2020 21:16:39.891] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.lodestone.fall
+[12juil.2020 21:16:39.891] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:item.lodestone_compass.lock
+[12juil.2020 21:16:39.891] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:entity.mule.angry
+[12juil.2020 21:16:39.891] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:entity.mule.eat
+[12juil.2020 21:16:39.891] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:music_disc.pigstep
+[12juil.2020 21:16:39.891] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:music.nether.basalt_deltas
+[12juil.2020 21:16:39.891] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:music.nether.nether_wastes
+[12juil.2020 21:16:39.891] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:music.nether.soul_sand_valley
+[12juil.2020 21:16:39.897] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:music.nether.crimson_forest
+[12juil.2020 21:16:39.897] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:music.nether.warped_forest
+[12juil.2020 21:16:39.897] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.nether_bricks.break
+[12juil.2020 21:16:39.897] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.nether_bricks.step
+[12juil.2020 21:16:39.897] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.nether_bricks.place
+[12juil.2020 21:16:39.897] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.nether_bricks.hit
+[12juil.2020 21:16:39.897] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.nether_bricks.fall
+[12juil.2020 21:16:39.897] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.stem.break
+[12juil.2020 21:16:39.897] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.stem.step
+[12juil.2020 21:16:39.897] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.stem.place
+[12juil.2020 21:16:39.897] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.stem.hit
+[12juil.2020 21:16:39.897] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.stem.fall
+[12juil.2020 21:16:39.897] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.nylium.break
+[12juil.2020 21:16:39.898] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.nylium.step
+[12juil.2020 21:16:39.898] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.nylium.place
+[12juil.2020 21:16:39.898] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.nylium.hit
+[12juil.2020 21:16:39.898] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.nylium.fall
+[12juil.2020 21:16:39.898] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.nether_sprouts.break
+[12juil.2020 21:16:39.898] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.nether_sprouts.step
+[12juil.2020 21:16:39.898] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.nether_sprouts.place
+[12juil.2020 21:16:39.898] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.nether_sprouts.hit
+[12juil.2020 21:16:39.898] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.nether_sprouts.fall
+[12juil.2020 21:16:39.898] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.fungus.break
+[12juil.2020 21:16:39.898] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.fungus.step
+[12juil.2020 21:16:39.898] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.fungus.place
+[12juil.2020 21:16:39.898] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.fungus.hit
+[12juil.2020 21:16:39.898] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.fungus.fall
+[12juil.2020 21:16:39.898] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.weeping_vines.break
+[12juil.2020 21:16:39.898] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.weeping_vines.step
+[12juil.2020 21:16:39.898] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.weeping_vines.place
+[12juil.2020 21:16:39.898] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.weeping_vines.hit
+[12juil.2020 21:16:39.898] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.weeping_vines.fall
+[12juil.2020 21:16:39.898] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.wart_block.break
+[12juil.2020 21:16:39.899] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.wart_block.step
+[12juil.2020 21:16:39.904] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.wart_block.place
+[12juil.2020 21:16:39.904] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.wart_block.hit
+[12juil.2020 21:16:39.905] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.wart_block.fall
+[12juil.2020 21:16:39.905] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.netherite_block.break
+[12juil.2020 21:16:39.905] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.netherite_block.step
+[12juil.2020 21:16:39.905] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.netherite_block.place
+[12juil.2020 21:16:39.905] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.netherite_block.hit
+[12juil.2020 21:16:39.905] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.netherite_block.fall
+[12juil.2020 21:16:39.905] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.netherrack.break
+[12juil.2020 21:16:39.905] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.netherrack.step
+[12juil.2020 21:16:39.905] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.netherrack.place
+[12juil.2020 21:16:39.905] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.netherrack.hit
+[12juil.2020 21:16:39.905] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.netherrack.fall
+[12juil.2020 21:16:39.905] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:entity.parrot.imitate.hoglin
+[12juil.2020 21:16:39.905] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:entity.parrot.imitate.piglin
+[12juil.2020 21:16:39.905] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:entity.parrot.imitate.zoglin
+[12juil.2020 21:16:39.905] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:entity.piglin.admiring_item
+[12juil.2020 21:16:39.905] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:entity.piglin.ambient
+[12juil.2020 21:16:39.905] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:entity.piglin.angry
+[12juil.2020 21:16:39.905] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:entity.piglin.celebrate
+[12juil.2020 21:16:39.905] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:entity.piglin.death
+[12juil.2020 21:16:39.905] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:entity.piglin.jealous
+[12juil.2020 21:16:39.906] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:entity.piglin.hurt
+[12juil.2020 21:16:39.906] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:entity.piglin.retreat
+[12juil.2020 21:16:39.906] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:entity.piglin.step
+[12juil.2020 21:16:39.906] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:entity.piglin.converted_to_zombified
+[12juil.2020 21:16:39.906] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.nether_gold_ore.break
+[12juil.2020 21:16:39.906] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.nether_gold_ore.fall
+[12juil.2020 21:16:39.906] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.nether_gold_ore.hit
+[12juil.2020 21:16:39.906] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.nether_gold_ore.place
+[12juil.2020 21:16:39.906] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.nether_gold_ore.step
+[12juil.2020 21:16:39.906] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.nether_ore.break
+[12juil.2020 21:16:39.906] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.nether_ore.fall
+[12juil.2020 21:16:39.907] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.nether_ore.hit
+[12juil.2020 21:16:39.907] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.nether_ore.place
+[12juil.2020 21:16:39.907] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.nether_ore.step
+[12juil.2020 21:16:39.907] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.respawn_anchor.ambient
+[12juil.2020 21:16:39.907] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.respawn_anchor.charge
+[12juil.2020 21:16:39.907] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.respawn_anchor.deplete
+[12juil.2020 21:16:39.907] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.respawn_anchor.set_spawn
+[12juil.2020 21:16:39.907] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.shroomlight.break
+[12juil.2020 21:16:39.907] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.shroomlight.step
+[12juil.2020 21:16:39.908] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.shroomlight.place
+[12juil.2020 21:16:39.908] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.shroomlight.hit
+[12juil.2020 21:16:39.908] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.shroomlight.fall
+[12juil.2020 21:16:39.908] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.soul_sand.break
+[12juil.2020 21:16:39.908] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.soul_sand.step
+[12juil.2020 21:16:39.908] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.soul_sand.place
+[12juil.2020 21:16:39.908] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.soul_sand.hit
+[12juil.2020 21:16:39.908] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.soul_sand.fall
+[12juil.2020 21:16:39.908] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.soul_soil.break
+[12juil.2020 21:16:39.908] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.soul_soil.step
+[12juil.2020 21:16:39.908] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.soul_soil.place
+[12juil.2020 21:16:39.908] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.soul_soil.hit
+[12juil.2020 21:16:39.908] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.soul_soil.fall
+[12juil.2020 21:16:39.908] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:particle.soul_escape
+[12juil.2020 21:16:39.908] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:entity.strider.ambient
+[12juil.2020 21:16:39.908] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:entity.strider.happy
+[12juil.2020 21:16:39.908] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:entity.strider.retreat
+[12juil.2020 21:16:39.908] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:entity.strider.death
+[12juil.2020 21:16:39.908] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:entity.strider.hurt
+[12juil.2020 21:16:39.908] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:entity.strider.step
+[12juil.2020 21:16:39.909] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:entity.strider.step_lava
+[12juil.2020 21:16:39.909] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:entity.strider.eat
+[12juil.2020 21:16:39.909] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:entity.strider.saddle
+[12juil.2020 21:16:39.909] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.smithing_table.use
+[12juil.2020 21:16:39.909] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:entity.snow_golem.shear
+[12juil.2020 21:16:39.917] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:block.vine.step
+[12juil.2020 21:16:39.917] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:entity.zoglin.ambient
+[12juil.2020 21:16:39.917] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:entity.zoglin.angry
+[12juil.2020 21:16:39.917] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:entity.zoglin.attack
+[12juil.2020 21:16:39.917] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:entity.zoglin.death
+[12juil.2020 21:16:39.918] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:entity.zoglin.hurt
+[12juil.2020 21:16:39.918] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:entity.zoglin.step
+[12juil.2020 21:16:39.918] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:entity.zombified_piglin.ambient
+[12juil.2020 21:16:39.918] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:entity.zombified_piglin.angry
+[12juil.2020 21:16:39.918] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:entity.zombified_piglin.death
+[12juil.2020 21:16:39.918] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: minecraft:entity.zombified_piglin.hurt
+[12juil.2020 21:16:40.469] [Render thread/INFO] [net.minecraft.client.audio.SoundSystem/]: OpenAL initialized.
+[12juil.2020 21:16:40.471] [Render thread/INFO] [net.minecraft.client.audio.SoundEngine/SOUNDS]: Sound engine started
+[12juil.2020 21:16:41.021] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 1024x512x4 minecraft:textures/atlas/blocks.png-atlas
+[12juil.2020 21:16:41.200] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x128x4 minecraft:textures/atlas/signs.png-atlas
+[12juil.2020 21:16:41.201] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[12juil.2020 21:16:41.202] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[12juil.2020 21:16:41.203] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[12juil.2020 21:16:41.204] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[12juil.2020 21:16:41.205] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[12juil.2020 21:16:42.669] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
+[12juil.2020 21:16:42.671] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
+[12juil.2020 21:16:42.672] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 128x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[12juil.2020 21:16:43.734] [Realms Notification Availability checker #1/INFO] [com.mojang.realmsclient.client.RealmsClient/]: Could not authorize you against Realms server: Invalid session id
+[12juil.2020 21:17:09.588] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[12juil.2020 21:17:09.589] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[12juil.2020 21:17:09.590] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[12juil.2020 21:17:09.591] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[12juil.2020 21:17:09.592] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[12juil.2020 21:17:09.598] [Render thread/INFO] [net.minecraft.resources.SimpleReloadableResourceManager/]: Reloading ResourceManager: Default, main, forge-1.16.1-32.0.25_mapped_snapshot_20200707-1.16.1-recomp.jar
+[12juil.2020 21:17:11.057] [Render thread/INFO] [net.minecraft.item.crafting.RecipeManager/]: Loaded 7 recipes
+[12juil.2020 21:17:12.514] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 927 advancements
+[12juil.2020 21:17:13.052] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', name='PROD'
+[12juil.2020 21:17:13.152] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Starting integrated minecraft server version 1.16.1
+[12juil.2020 21:17:13.153] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Generating keypair
+[12juil.2020 21:17:13.729] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
+[12juil.2020 21:17:22.203] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[12juil.2020 21:17:22.204] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[12juil.2020 21:17:22.204] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[12juil.2020 21:17:22.205] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[12juil.2020 21:17:22.205] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[12juil.2020 21:17:22.205] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[12juil.2020 21:17:22.239] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[12juil.2020 21:17:22.239] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[12juil.2020 21:17:22.239] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[12juil.2020 21:17:22.239] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[12juil.2020 21:17:22.239] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[12juil.2020 21:17:22.239] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[12juil.2020 21:17:22.239] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[12juil.2020 21:17:22.239] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[12juil.2020 21:17:22.239] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[12juil.2020 21:17:22.239] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[12juil.2020 21:17:22.240] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[12juil.2020 21:17:22.327] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[12juil.2020 21:17:23.090] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[12juil.2020 21:17:23.186] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.186] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.186] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.200] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.201] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.201] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.202] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.202] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.202] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.205] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.205] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.205] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.214] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.214] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.214] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.215] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.215] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.215] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.217] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.217] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.217] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.242] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.242] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.242] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.243] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.244] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.244] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.246] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.246] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.247] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.248] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.248] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.249] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.258] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 83%
+[12juil.2020 21:17:23.283] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.283] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.284] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.284] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.285] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.285] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.285] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.286] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.286] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.286] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.286] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.287] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.296] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.296] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.296] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.302] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.303] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.303] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.303] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.303] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.303] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.304] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.304] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.304] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.305] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.305] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.305] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.307] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.307] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.307] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.308] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.308] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.308] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.311] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.311] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.311] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.317] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.317] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.317] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.318] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.318] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.318] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.319] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.319] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.319] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.342] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.342] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.342] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.343] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.343] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.343] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.344] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.344] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.345] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.347] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.347] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.347] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.348] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.348] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.348] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.349] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.350] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.350] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.350] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.350] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.350] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.351] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.351] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.351] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.352] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.352] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.352] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.353] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.353] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.353] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.357] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.358] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.358] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.360] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.364] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.364] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.365] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.365] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.366] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.368] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.369] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.369] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.375] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.375] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.375] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.376] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.376] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.376] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.377] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.377] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.377] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.377] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.378] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.378] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.378] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.378] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.379] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.379] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.379] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.379] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.380] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.380] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.380] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.381] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.381] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.381] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.382] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.382] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.382] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.384] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.384] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.384] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.387] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.388] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.388] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.389] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.389] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.389] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.390] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.390] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.390] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.391] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.391] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.391] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.391] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.391] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.392] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.392] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.392] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.392] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.393] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.393] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.393] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.394] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.394] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.394] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.395] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.395] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.395] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.395] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.396] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.396] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.396] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.396] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.396] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.397] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.397] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.397] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.398] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.398] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.398] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.406] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.406] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.406] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.407] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.408] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.408] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.410] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.410] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.410] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.415] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.416] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.416] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.417] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.417] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.418] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.419] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.419] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.419] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.420] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.420] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.420] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.421] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.422] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.422] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.422] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.423] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.423] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.427] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.427] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.428] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.429] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.429] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.429] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.431] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.431] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.431] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.432] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.432] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.432] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.433] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.434] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.434] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.435] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.435] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.435] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.435] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.435] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.435] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.445] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.445] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.445] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.447] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.447] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.447] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.448] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.448] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.448] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.449] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.449] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.449] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.450] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.450] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.450] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.451] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.451] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.451] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.453] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.454] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.454] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.456] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.456] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.457] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.466] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.466] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.466] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.467] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.468] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.468] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.469] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.469] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.469] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.469] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.470] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.470] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.471] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.471] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.471] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.472] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.472] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.472] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.472] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.472] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.472] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.473] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.473] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.473] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.473] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.473] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.473] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.474] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.474] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.474] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.474] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.474] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.475] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.476] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.476] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.476] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.476] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.476] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.476] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.478] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.478] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.478] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.500] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.500] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.500] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.501] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.502] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.502] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.502] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.502] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.503] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.503] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.503] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.503] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.504] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.504] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.504] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.505] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.505] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.505] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.507] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.507] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.508] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.508] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.508] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.508] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.509] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.509] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.509] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.510] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.510] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.510] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.511] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.511] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.511] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.511] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.511] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.511] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.512] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.512] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.512] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.512] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.512] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.512] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.513] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.513] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.513] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.513] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.513] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.513] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.514] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.517] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.517] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.522] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.522] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.523] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.525] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.526] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.526] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.527] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.527] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.527] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.528] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.528] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.529] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.529] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.529] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.529] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.530] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.530] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.530] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.530] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.530] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.530] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.533] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.533] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.533] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.539] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.539] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.539] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.542] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.542] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.542] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.549] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.550] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.550] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.552] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.552] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.552] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.553] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.553] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.553] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.553] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.553] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.553] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.554] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.554] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.554] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.557] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.557] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.557] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.558] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.558] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.558] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.569] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.569] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.569] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.570] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.570] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.570] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.572] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.572] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.572] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.576] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.576] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.576] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.578] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.579] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.579] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.580] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.580] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.580] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.581] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.582] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.582] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.589] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.589] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.589] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.589] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.590] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.590] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.597] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.597] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.597] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.604] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.604] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.605] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.611] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.611] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.611] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.616] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.616] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.616] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.617] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.617] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.617] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.636] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.636] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.637] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.643] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.643] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.643] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.646] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.646] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.646] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.646] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.646] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.646] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.648] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.649] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.649] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.649] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.649] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.649] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.651] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.651] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.651] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.655] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.655] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.655] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.656] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.656] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.656] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.657] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.657] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.657] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.658] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.658] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.658] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.658] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.658] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.659] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.667] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.672] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.672] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.677] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.677] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.678] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.682] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.683] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.683] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.684] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.685] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.685] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.686] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.687] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.687] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.689] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.689] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.689] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.690] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.690] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.690] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.691] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.693] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.693] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.699] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.699] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.699] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.704] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.704] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.704] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.710] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.711] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.711] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.711] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.712] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.712] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.712] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.712] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.712] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.714] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.714] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.714] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.714] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.715] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.715] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.754] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.754] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.754] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.770] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.771] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.771] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.771] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.778] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.784] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.789] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.789] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.789] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.790] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.790] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.790] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.792] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.792] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.792] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.792] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.793] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.793] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.793] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.793] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.793] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.793] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.793] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.793] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.794] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.794] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.794] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.805] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.805] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.805] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.809] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.809] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.809] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.810] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.810] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.810] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.810] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.810] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.810] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.811] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.811] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.811] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.814] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.815] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.815] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.816] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.816] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.817] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.817] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.817] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.817] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.818] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.818] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.818] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.820] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.820] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.820] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.824] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.824] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.824] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.842] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.842] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.842] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.843] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.843] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.843] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.846] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.846] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.846] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.847] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.847] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.847] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.849] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.849] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.849] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.849] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.850] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.850] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.851] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.851] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.851] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.855] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.855] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.856] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.856] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.856] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.856] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.857] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.857] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.863] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.864] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.864] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.864] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.865] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.865] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.872] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.873] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.873] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.873] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.875] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.875] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.875] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.876] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.876] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.877] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.877] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.878] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.878] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.883] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.884] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.884] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.884] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.885] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.885] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.886] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.886] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.886] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.887] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.887] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.888] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.888] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.889] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.889] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.889] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.890] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.901] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.901] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.902] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.902] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.916] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.916] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.916] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.917] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.917] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.917] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.918] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.918] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.918] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.922] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.923] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.923] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.923] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:23.923] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:23.923] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:23.933] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Configuration file .\saves\Test #1\serverconfig\forge-server.toml is not correct. Correcting
+[12juil.2020 21:17:23.933] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.fixAdvancementLoading was corrected from null to true
+[12juil.2020 21:17:23.938] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Time elapsed: 10189 ms
+[12juil.2020 21:17:24.556] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Changing view distance to 11, from 10
+[12juil.2020 21:17:27.687] [Netty Local Client IO #0/INFO] [net.minecraftforge.fml.network.NetworkHooks/]: Connected to a modded server.
+[12juil.2020 21:17:27.856] [Server thread/INFO] [net.minecraftforge.common.AdvancementLoadFix/]: Using new advancement loading for net.minecraft.advancements.PlayerAdvancements@24594e1b
+[12juil.2020 21:17:27.888] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:27.888] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:27.888] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:27.889] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'generic.reachDistance'
+[12juil.2020 21:17:27.896] [Server thread/INFO] [net.minecraft.server.management.PlayerList/]: Dev[local:E:df92e9b2] logged in with entity id 245 at (144.5, 84.67636733724616, 164.5)
+[12juil.2020 21:17:27.948] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
+[12juil.2020 21:17:28.724] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Saving and pausing game...
+[12juil.2020 21:17:28.759] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Test #1]'/minecraft:overworld
+[12juil.2020 21:17:29.177] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 36 advancements
+[12juil.2020 21:17:30.323] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Test #1]'/minecraft:the_nether
+[12juil.2020 21:17:30.324] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Test #1]'/minecraft:the_end
+[12juil.2020 21:17:30.391] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 2229ms or 44 ticks behind
+[12juil.2020 21:17:31.132] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:31.132] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:31.132] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:31.239] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:31.239] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:31.239] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:31.242] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:31.242] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:31.242] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:31.244] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:31.244] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:31.245] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:34.290] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:34.290] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:34.290] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:42.296] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:42.297] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:42.297] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:42.297] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:42.297] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:42.298] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:42.298] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:42.298] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:42.298] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:42.298] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:42.298] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:42.298] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:43.907] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Survival Mode]
+[12juil.2020 21:17:44.042] [Render thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT] Set own game mode to Survival Mode
+[12juil.2020 21:17:44.844] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Creative Mode]
+[12juil.2020 21:17:44.849] [Render thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT] Set own game mode to Creative Mode
+[12juil.2020 21:17:45.427] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Spectator Mode]
+[12juil.2020 21:17:45.449] [Render thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT] Set own game mode to Spectator Mode
+[12juil.2020 21:17:46.080] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set the time to 6000]
+[12juil.2020 21:17:46.089] [Render thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT] Set the time to 6000
+[12juil.2020 21:17:46.706] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set the time to 18000]
+[12juil.2020 21:17:46.718] [Render thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT] Set the time to 18000
+[12juil.2020 21:17:47.131] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set the weather to clear]
+[12juil.2020 21:17:47.131] [Render thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT] Set the weather to clear
+[12juil.2020 21:17:47.763] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev fell out of the world
+[12juil.2020 21:17:47.765] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Killed Dev]
+[12juil.2020 21:17:47.780] [Render thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT] Dev fell out of the world
+[12juil.2020 21:17:47.780] [Render thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT] Killed Dev
+[12juil.2020 21:17:50.267] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <Dev> "Hello !"
+[12juil.2020 21:17:50.288] [Render thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT] <Dev> "Hello !"
+[12juil.2020 21:17:50.978] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:50.978] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:50.978] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:50.979] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:50.979] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:50.979] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:51.015] [Render thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT] This macro isn't configured yet ! Go to the mod option to set it.
+[12juil.2020 21:17:51.682] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:51.682] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:51.682] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:51.682] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:51.682] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:51.682] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:51.682] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:51.682] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:51.682] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:51.683] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:51.683] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:51.683] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:51.684] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:51.684] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:51.684] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:51.685] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:51.685] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:51.685] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:51.685] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:51.685] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:51.685] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:51.686] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.swimSpeed'
+[12juil.2020 21:17:51.686] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.nameTagDistance'
+[12juil.2020 21:17:51.686] [Server thread/WARN] [net.minecraft.entity.ai.attributes.AttributeModifierManager/]: Ignoring unknown attribute 'forge.entity_gravity'
+[12juil.2020 21:17:56.563] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Saving and pausing game...
+[12juil.2020 21:17:56.570] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Test #1]'/minecraft:overworld
+[12juil.2020 21:17:56.873] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Test #1]'/minecraft:the_nether
+[12juil.2020 21:17:56.875] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Test #1]'/minecraft:the_end
+[12juil.2020 21:17:57.313] [Server thread/INFO] [net.minecraft.network.play.ServerPlayNetHandler/]: Dev lost connection: Disconnected
+[12juil.2020 21:17:57.313] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
+[12juil.2020 21:17:57.322] [Server thread/INFO] [net.minecraft.network.play.ServerPlayNetHandler/]: Stopping singleplayer server as player logged out
+[12juil.2020 21:17:57.350] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[12juil.2020 21:17:57.350] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+[12juil.2020 21:17:57.350] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[12juil.2020 21:17:57.350] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Test #1]'/minecraft:overworld
+[12juil.2020 21:17:57.660] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (Test #1): All chunks are saved
+[12juil.2020 21:17:57.660] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Test #1]'/minecraft:the_nether
+[12juil.2020 21:17:57.661] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[12juil.2020 21:17:57.661] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Test #1]'/minecraft:the_end
+[12juil.2020 21:17:57.662] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[12juil.2020 21:17:57.690] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (Test #1): All chunks are saved
+[12juil.2020 21:17:57.710] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[12juil.2020 21:17:57.710] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[12juil.2020 21:17:59.400] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!
