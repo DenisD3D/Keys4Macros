@@ -40,6 +40,7 @@ public class ModConfig {
 
         config.setComment("Macros", " Keys4Macros configuration\n" +
                 "  - Curseforge : https://www.curseforge.com/minecraft/mc-mods/keys4macros\n" +
+                "  - Modrinth : https://modrinth.com/mod/keys4macros\n" +
                 "  - Discord : https://discord.gg/rzzd76c\n" +
                 "  - Github : https://github.com/DenisD3D/Keys4Macros\n" +
                 "\n" +
