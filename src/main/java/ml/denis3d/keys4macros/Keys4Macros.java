@@ -7,9 +7,9 @@ import net.minecraftforge.client.event.InputEvent;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.EventPriority;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.ExtensionPoint;
 import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fmlclient.ConfigGuiHandler;
 import org.lwjgl.glfw.GLFW;
 
 import java.io.File;
@@ -24,7 +24,8 @@ public class Keys4Macros {
         MinecraftForge.EVENT_BUS.register(this);
         this.config = ModConfig.load(CONFIG_FILE);
 
-        ModLoadingContext.get().registerExtensionPoint(ExtensionPoint.CONFIGGUIFACTORY, () -> ConfigScreen::new);
+        ModLoadingContext.get().registerExtensionPoint(ConfigGuiHandler.ConfigGuiFactory.class,
+                () -> new ConfigGuiHandler.ConfigGuiFactory(ConfigScreen::new));
 
         INSTANCE = this;
     }
@@ -32,9 +33,11 @@ public class Keys4Macros {
     @OnlyIn(Dist.CLIENT)
     @SubscribeEvent(priority = EventPriority.NORMAL, receiveCanceled = true)
     public void onEvent(InputEvent.KeyInputEvent event) {
+        if (Minecraft.getInstance().screen != null)
+            return;
         if (event.getAction() == GLFW.GLFW_PRESS && this.config.macros_map.containsKey(event.getKey())) {
             if (Minecraft.getInstance().player != null)
-                Minecraft.getInstance().player.sendChatMessage(this.config.macros_map.get(event.getKey()).command);
+                Minecraft.getInstance().player.chat(this.config.macros_map.get(event.getKey()).command);
         }
     }
 }

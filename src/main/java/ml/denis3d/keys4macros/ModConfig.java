@@ -38,19 +38,30 @@ public class ModConfig {
 
         converter.toConfig(modConfig, config);
 
-        config.setComment("Macros", " Keys4Macros configuration\n" +
-                "  - Curseforge : https://www.curseforge.com/minecraft/mc-mods/keys4macros\n" +
-                "  - Modrinth : https://modrinth.com/mod/keys4macros\n" +
-                "  - Discord : https://discord.gg/rzzd76c\n" +
-                "  - Github : https://github.com/DenisD3D/Keys4Macros\n" +
-                "\n" +
-                " Duplicate the 'macro' block for each macro that you want to create\n" +
-                "  - key is a number associated with the key. The list can be found here https://www.glfw.org/docs/3.3/group__keys.html\n" +
-                "  - command is the command to execute (you need to put the / too)");
+        config.setComment("Macros", """
+                Keys4Macros configuration
+                 - Curseforge : https://www.curseforge.com/minecraft/mc-mods/keys4macros
+                 - Modrinth : https://modrinth.com/mod/keys4macros
+                 - Discord : https://discord.gg/rzzd76c
+                 - Github : https://github.com/DenisD3D/Keys4Macros
+
+                Duplicate the 'macro' block for each macro that you want to create
+                 - key is a number associated with the key. The list can be found here https://www.glfw.org/docs/3.3/group__keys.html
+                 - command is the command to execute (you need to put the / too)""".indent(1));
 
         config.save();
 
         return modConfig;
+    }
+
+    public static void reload() {
+        ObjectConverter converter = new ObjectConverter();
+        CommentedFileConfig config = CommentedFileConfig.of(Keys4Macros.CONFIG_FILE);
+        converter.toConfig(Keys4Macros.INSTANCE.config, config);
+
+        config.save();
+
+        Keys4Macros.INSTANCE.config = load(Keys4Macros.CONFIG_FILE);
     }
 
     public static class MacroEntry {
@@ -58,5 +69,6 @@ public class ModConfig {
         public Integer key = 0;
         @PreserveNotNull
         public String command = "";
+
     }
 }
