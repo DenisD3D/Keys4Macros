@@ -1,5 +1,5 @@
 modLoader = "javafml"
-loaderVersion = "[37,)"
+loaderVersion = "[32,)"
 license = "Apache 2.0"
 issueTrackerURL = "https://github.com/DenisD3D/Keys4Macros/issues"
 
@@ -10,18 +10,18 @@ issueTrackerURL = "https://github.com/DenisD3D/Keys4Macros/issues"
     displayURL = "https://www.curseforge.com/minecraft/mc-mods/keys4macros"
     logoFile = "logo.png"
     authors = "DenisD3D"
-    description = '''A mod to execute macros command with a key'''
+    description = '''A mod to execute macros commands with a key'''
 
 [[dependencies.keys4macros]]
     mandatory = true
     modId = "forge"
-    versionRange = "[37,)"
+    versionRange = "[39,)"
     ordering = "NONE"
     side = "BOTH"
 
 [[dependencies.keys4macros]]
     modId = "minecraft"
     mandatory = true
-    versionRange = "[1.17.1,1.18)"
+    versionRange = "[1.18,1.19)"
     ordering = "NONE"
     side = "BOTH"

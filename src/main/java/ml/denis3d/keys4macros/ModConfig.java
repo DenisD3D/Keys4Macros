@@ -8,14 +8,12 @@ import com.electronwill.nightconfig.core.file.CommentedFileConfig;
 
 import java.io.File;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 
 public class ModConfig {
     @PreserveNotNull
     @Path("Macros.Macro")
     public List<MacroEntry> macros = new ArrayList<>();
-    public transient HashMap<Integer, MacroEntry> macros_map = new HashMap<>();
 
     public static ModConfig load(File file) {
         Config.setInsertionOrderPreserved(true);
@@ -28,13 +26,8 @@ public class ModConfig {
 
         config.clear();
         if (modConfig.macros.isEmpty()) {
-            modConfig.macros.add(new MacroEntry());
+            modConfig.macros.add(new MacroEntry(80, 0, "/gamemode spectator", "Press P to switch to gamemode spectator"));
         }
-
-        for (MacroEntry macro : modConfig.macros) {
-            modConfig.macros_map.put(macro.key, macro);
-        }
-
 
         converter.toConfig(modConfig, config);
 
@@ -47,7 +40,10 @@ public class ModConfig {
 
                 Duplicate the 'macro' block for each macro that you want to create
                  - key is a number associated with the key. The list can be found here https://www.glfw.org/docs/3.3/group__keys.html
-                 - command is the command to execute (you need to put the / too)""".indent(1));
+                 - command is the command to execute (you need to put the / too)
+                 - comment is for you to remember what the macro does / the key for it (No impact on behavior)
+                 
+                Don't forget to press the Reload Config button after any edit to this file""".indent(1));
 
         config.save();
 
@@ -68,7 +64,20 @@ public class ModConfig {
         @PreserveNotNull
         public Integer key = 0;
         @PreserveNotNull
+        public Integer modifiers = 0;
+        @PreserveNotNull
         public String command = "";
+        @PreserveNotNull
+        public String comment = "";
 
+        public MacroEntry() {
+        }
+
+        public MacroEntry(Integer key, Integer modifiers, String command, String comment) {
+            this.key = key;
+            this.modifiers = modifiers;
+            this.command = command;
+            this.comment = comment;
+        }
     }
 }

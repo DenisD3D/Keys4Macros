@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<module external.linked.project.id="Keys4Gamemode:test" external.linked.project.path="$MODULE_DIR$/../.." external.root.project.path="$MODULE_DIR$/../.." external.system.id="GRADLE" external.system.module.group="ml.denis3d.keys4macros" external.system.module.type="sourceSet" external.system.module.version="2.0.5" type="JAVA_MODULE" version="4">
+<module external.linked.project.id="Keys4Gamemode:test" external.linked.project.path="$MODULE_DIR$/../.." external.root.project.path="$MODULE_DIR$/../.." external.system.id="GRADLE" external.system.module.group="ml.denis3d.keys4macros" external.system.module.type="sourceSet" external.system.module.version="2.0.6" type="JAVA_MODULE" version="4">
   <component name="FacetManager">
     <facet type="minecraft" name="Minecraft">
       <configuration>
@@ -13,8 +13,8 @@
   </component>
   <component name="McpModuleSettings">
     <option name="mappingFile" value="C:\Users\thede\Documents\Projets\Java\Keys4Gamemode\build\createMcpToSrg\output.tsrg" />
-    <option name="mcpVersion" value="official_1.17.1" />
-    <option name="minecraftVersion" value="1.17.1" />
+    <option name="mcpVersion" value="official_1.18.1" />
+    <option name="minecraftVersion" value="1.18.1" />
     <option name="srgType" value="TSRG" />
   </component>
   <component name="NewModuleRootManager">
@@ -27,14 +27,16 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="Keys4Gamemode.main" />
-    <orderEntry type="library" name="Gradle: net.minecraftforge:forge:1.17.1-37.0.103_mapped_official_1.17.1" level="project" />
-    <orderEntry type="library" name="Gradle: net.minecraft:client:extra:1.17.1" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.code.findbugs:jsr305:3.0.1" level="project" />
+    <orderEntry type="library" name="Gradle: net.minecraftforge:forge:1.18.1-39.0.5_mapped_official_1.18.1" level="project" />
+    <orderEntry type="library" name="Gradle: net.minecraft:client:extra:1.18.1" level="project" />
+    <orderEntry type="library" name="Gradle: net.minecraftforge:fmlloader:1.18.1-39.0.5" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.guava:guava:31.0.1-jre" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.code.findbugs:jsr305:3.0.2" level="project" />
     <orderEntry type="library" name="Gradle: ca.weblite:java-objc-bridge:1.0.0" level="project" />
     <orderEntry type="library" name="Gradle: net.minecraftforge:mergetool:api:1.1.3" level="project" />
-    <orderEntry type="library" name="Gradle: net.minecraft:mappings_official:zip:1.17.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains:annotations:23.0.0" level="project" />
+    <orderEntry type="library" name="Gradle: net.minecraft:mappings_official:zip:1.18.1" level="project" />
     <orderEntry type="library" name="Gradle: cpw.mods:securejarhandler:0.9.54" level="project" />
-    <orderEntry type="library" name="Gradle: net.minecraftforge:fmlloader:1.17.1-37.0.103" level="project" />
     <orderEntry type="library" name="Gradle: cpw.mods:modlauncher:9.0.7" level="project" />
     <orderEntry type="library" name="Gradle: org.openjdk.nashorn:nashorn-core:15.3" level="project" />
     <orderEntry type="library" name="Gradle: org.ow2.asm:asm-commons:9.1" level="project" />
@@ -44,50 +46,48 @@
     <orderEntry type="library" name="Gradle: org.ow2.asm:asm:9.1" level="project" />
     <orderEntry type="library" name="Gradle: net.minecraftforge:accesstransformers:8.0.4" level="project" />
     <orderEntry type="library" name="Gradle: org.antlr:antlr4-runtime:4.9.1" level="project" />
-    <orderEntry type="library" name="Gradle: net.minecraftforge:fmlcore:1.17.1-37.0.103" level="project" />
+    <orderEntry type="library" name="Gradle: net.minecraftforge:fmlcore:1.18.1-39.0.5" level="project" />
     <orderEntry type="library" name="Gradle: net.minecraftforge:eventbus:5.0.3" level="project" />
     <orderEntry type="library" name="Gradle: net.minecraftforge:forgespi:4.0.10" level="project" />
     <orderEntry type="library" name="Gradle: net.minecraftforge:coremods:5.0.1" level="project" />
     <orderEntry type="library" name="Gradle: net.minecraftforge:unsafe:0.2.0" level="project" />
-    <orderEntry type="library" name="Gradle: com.electronwill.night-config:toml:3.6.3" level="project" />
-    <orderEntry type="library" name="Gradle: com.electronwill.night-config:core:3.6.3" level="project" />
+    <orderEntry type="library" name="Gradle: com.electronwill.night-config:toml:3.6.4" level="project" />
+    <orderEntry type="library" name="Gradle: com.electronwill.night-config:core:3.6.4" level="project" />
     <orderEntry type="library" name="Gradle: org.apache.maven:maven-artifact:3.8.1" level="project" />
-    <orderEntry type="library" name="Gradle: org.apache.commons:commons-lang3:3.8.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.commons:commons-lang3:3.12.0" level="project" />
     <orderEntry type="library" name="Gradle: net.jodah:typetools:0.8.3" level="project" />
     <orderEntry type="library" name="Gradle: net.minecrell:terminalconsoleappender:1.2.0" level="project" />
-    <orderEntry type="library" name="Gradle: org.apache.logging.log4j:log4j-core:2.14.1" level="project" />
-    <orderEntry type="library" name="Gradle: org.apache.logging.log4j:log4j-api:2.14.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.logging.log4j:log4j-core:2.15.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.logging.log4j:log4j-slf4j18-impl:2.15.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.logging.log4j:log4j-api:2.15.0" level="project" />
     <orderEntry type="library" name="Gradle: org.jline:jline-reader:3.12.1" level="project" />
     <orderEntry type="library" name="Gradle: org.jline:jline-terminal:3.12.1" level="project" />
     <orderEntry type="library" name="Gradle: net.sf.jopt-simple:jopt-simple:5.0.4" level="project" />
-    <orderEntry type="library" name="Gradle: org.spongepowered:mixin:0.8.4" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.guava:guava:21.0" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.code.gson:gson:2.8.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.spongepowered:mixin:0.8.5" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.code.gson:gson:2.8.8" level="project" />
     <orderEntry type="library" name="Gradle: cpw.mods:bootstraplauncher:0.1.17" level="project" />
-    <orderEntry type="library" name="Gradle: net.minecraftforge:javafmllanguage:1.17.1-37.0.103" level="project" />
-    <orderEntry type="library" name="Gradle: net.minecraftforge:mclanguage:1.17.1-37.0.103" level="project" />
-    <orderEntry type="library" name="Gradle: org.apache.logging.log4j:log4j-slf4j18-impl:2.14.1" level="project" />
-    <orderEntry type="library" name="Gradle: com.mojang:blocklist:1.0.5" level="project" />
+    <orderEntry type="library" name="Gradle: net.minecraftforge:javafmllanguage:1.18.1-39.0.5" level="project" />
+    <orderEntry type="library" name="Gradle: net.minecraftforge:mclanguage:1.18.1-39.0.5" level="project" />
+    <orderEntry type="library" name="Gradle: com.mojang:blocklist:1.0.6" level="project" />
     <orderEntry type="library" name="Gradle: com.mojang:patchy:2.1.6" level="project" />
-    <orderEntry type="library" name="Gradle: com.github.oshi:oshi-core:5.7.5" level="project" />
-    <orderEntry type="library" name="Gradle: net.java.dev.jna:jna-platform:5.8.0" level="project" />
-    <orderEntry type="library" name="Gradle: net.java.dev.jna:jna:5.8.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.github.oshi:oshi-core:5.8.2" level="project" />
+    <orderEntry type="library" name="Gradle: net.java.dev.jna:jna-platform:5.9.0" level="project" />
+    <orderEntry type="library" name="Gradle: net.java.dev.jna:jna:5.9.0" level="project" />
     <orderEntry type="library" name="Gradle: org.slf4j:slf4j-api:1.8.0-beta4" level="project" />
-    <orderEntry type="library" name="Gradle: com.ibm.icu:icu4j:66.1" level="project" />
-    <orderEntry type="library" name="Gradle: com.mojang:javabridge:1.1.23" level="project" />
-    <orderEntry type="library" name="Gradle: io.netty:netty-all:4.1.25.Final" level="project" />
-    <orderEntry type="library" name="Gradle: commons-io:commons-io:2.5" level="project" />
-    <orderEntry type="library" name="Gradle: org.apache.httpcomponents:httpclient:4.3.3" level="project" />
-    <orderEntry type="library" name="Gradle: commons-codec:commons-codec:1.10" level="project" />
-    <orderEntry type="library" name="Gradle: net.java.jinput:jinput:2.0.5" level="project" />
-    <orderEntry type="library" name="Gradle: net.java.jutils:jutils:1.0.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.ibm.icu:icu4j:69.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.mojang:javabridge:1.2.24" level="project" />
+    <orderEntry type="library" name="Gradle: io.netty:netty-all:4.1.68.Final" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.guava:failureaccess:1.0.1" level="project" />
+    <orderEntry type="library" name="Gradle: commons-io:commons-io:2.11.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.httpcomponents:httpclient:4.5.13" level="project" />
+    <orderEntry type="library" name="Gradle: commons-codec:commons-codec:1.15" level="project" />
     <orderEntry type="library" name="Gradle: com.mojang:brigadier:1.0.18" level="project" />
     <orderEntry type="library" name="Gradle: com.mojang:datafixerupper:4.0.26" level="project" />
-    <orderEntry type="library" name="Gradle: com.mojang:authlib:2.3.31" level="project" />
-    <orderEntry type="library" name="Gradle: org.apache.commons:commons-compress:1.8.1" level="project" />
-    <orderEntry type="library" name="Gradle: commons-logging:commons-logging:1.1.3" level="project" />
-    <orderEntry type="library" name="Gradle: org.apache.httpcomponents:httpcore:4.3.2" level="project" />
-    <orderEntry type="library" name="Gradle: it.unimi.dsi:fastutil:8.2.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.mojang:authlib:3.2.38" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.commons:commons-compress:1.21" level="project" />
+    <orderEntry type="library" name="Gradle: commons-logging:commons-logging:1.2" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.httpcomponents:httpcore:4.4.14" level="project" />
+    <orderEntry type="library" name="Gradle: it.unimi.dsi:fastutil:8.5.6" level="project" />
     <orderEntry type="library" name="Gradle: org.lwjgl:lwjgl-jemalloc:3.2.2" level="project" />
     <orderEntry type="library" name="Gradle: org.lwjgl:lwjgl-openal:3.2.2" level="project" />
     <orderEntry type="library" name="Gradle: org.lwjgl:lwjgl-opengl:3.2.2" level="project" />
@@ -96,6 +96,10 @@
     <orderEntry type="library" name="Gradle: org.lwjgl:lwjgl-tinyfd:3.2.2" level="project" />
     <orderEntry type="library" name="Gradle: org.lwjgl:lwjgl:3.2.2" level="project" />
     <orderEntry type="library" name="Gradle: com.mojang:text2speech:1.11.3" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava" level="project" />
+    <orderEntry type="library" name="Gradle: org.checkerframework:checker-qual:3.12.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.errorprone:error_prone_annotations:2.7.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.j2objc:j2objc-annotations:1.3" level="project" />
     <orderEntry type="library" name="Gradle: org.antlr:antlr4:4.9.1" level="project" />
     <orderEntry type="library" name="Gradle: org.codehaus.plexus:plexus-utils:3.2.1" level="project" />
     <orderEntry type="library" name="Gradle: org.antlr:ST4:4.3" level="project" />
@@ -111,9 +115,6 @@
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.lwjgl:lwjgl:natives-windows:3.2.2" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: com.mojang:text2speech:natives-windows:1.11.3" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: net.minecraftforge:srgutils:0.4.3" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Gradle: net.java.jinput:jinput-platform:natives-linux:2.0.5" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Gradle: net.java.jinput:jinput-platform:natives-osx:2.0.5" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Gradle: net.java.jinput:jinput-platform:natives-windows:2.0.5" level="project" />
   </component>
   <component name="TestModuleProperties" production-module="Keys4Gamemode.main" />
 </module>
