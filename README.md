@@ -1,40 +1,35 @@
+[![Curseforge page](http://cf.way2muchnoise.eu/title/348754_Download_now!.svg?badge_style=flat)](https://www.curseforge.com/minecraft/mc-mods/keys4macros)
+[![Support Server Invite](https://img.shields.io/discord/586261375970574406.svg?color=7289da&label=Discord%20Support%20Server&logo=discord&style=flat-square)](https://discord.gg/rzzd76c)
 # ![image](https://user-images.githubusercontent.com/35769613/113513508-66e09b80-956a-11eb-90a9-280172115cbf.png)
-A mod to execute macros command with a key
+Macros for commands & chat messages
 
 ## Features :
-- Define key to execute command. This mod is only needed on the client and work well on server too.
-- When you press the key. The command is sent as a chat message and proceded by the server like any other command.
-- Create as many macros as you want through a configuration file.
+- Define a key to execute a command or send chat message (called a macro)
+- Mod need to be installed on client only
+- Work fine on server. When you press the key, the command is sent as a chat message and proceeded by the server like if you had typed it.
+- Create as many macros as you want
+- Make macro to be completed (prefill the chat)
 
-## Discord 
-Feel free to join my discord if you need help or fi you have any issue, any questions or any suggestions : https://discord.gg/rzzd76c
+## Create a macro :
+To open the macro configuration screen :
+ - While in-game : press key K (configurable with other minecraft key)
+ - While on main menu : Go to mods, then select Keys4Macros and finally Config
+ 
+To define a new Macro, hit the New Macro button
+Then fill the text box with the text that will be sent in chat (Start with a / for a command)
+Then next button define the key for the macro
+Next button switch between SEND (directly send the value of the text box) & WRITE (prefill the chat with the content of the text box)
+Last button allow you to delete the macro
 
-## Create a macro
-To open the configuration file, open the forge mod list GUI, select Keys4Macros and hit the Config button. Finally hit the Open config button.
+You can create as much macro as you want, it come in addition of Minecraft keybindings
 
-Each [[Macros.Macro]] block define a macro. You can duplicate this block as much as you want.
-- key is the number corresponding to the key you want. The list can be found here : https://www.glfw.org/docs/3.3/group__keys.html
-- command is the command to execute when the key is pressed, including the '/'
-When you're satisfied with your configuration, hit the **Reload Config** button or restart the game.
+## Discord :
+Feel free to join my discord if you need help or fi you have any issue, any questions or any suggestions :
+<a href="https://discord.gg/rzzd76c"><img src="https://media.discordapp.net/attachments/500369676090736652/882314410947932160/Discord-LogoWordmark-Color.png" width=300></a>
 
-## Example configuration
-The following configuration set the numpad key 0 to 3 to switch between all the gamemodes :
-```toml
-[Macros]
-    [[Macros.Macro]]
-        key = 320
-        command = "/gamemode adventure"
-    [[Macros.Macro]]
-        key = 321
-        command = "/gamemode survival"
-    [[Macros.Macro]]
-        key = 322
-        command = "/gamemode creative"
-    [[Macros.Macro]]
-        key = 323
-        command = "/gamemode spectator"
-``` 
+## Misc :
+Can I use this mod on a server ? 
+- Yes technically the mod work fine on server. However, it can be against some server rules, be sure to check them out. I won't handle any responsibility for a sanction due to this mod.  
 
-## Misc
 Can I use this mod in my mod pack / make a video on or with this mod ?
-     Yes, just remember to give credit and link back to the official download page, since they're the only links that are SAFE. You can use the mod freely, and put it in every modpack you want. You just need to put a link to this page, in the place where you tell people the mods in your modpack. If you make a video on this mod make sure to put a link to this page in the decription of the video.
+- Yes, you can use this mod freely, and put it in every modpack you want. Just remember to give credit and link back to the official download page, it's the only links that are SAFE.
