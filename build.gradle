@@ -41,6 +41,19 @@ minecraft {
                 }
             }
         }
+        server {
+            workingDirectory project.file('run_server')
+            property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
+            property 'forge.logging.console.level', 'info'
+            arg 'nogui'
+            singleInstance true
+
+            mods {
+                keys4macros {
+                    source sourceSets.main
+                }
+            }
+        }
     }
 }
 
@@ -63,6 +76,11 @@ repositories {
 }
 
 dependencies {
+    afterEvaluate {
+        minecraft('cpw.mods:securejarhandler:0.9.61') {
+            force = true
+        }
+    } // FIX DCEVM
     minecraft 'net.minecraftforge:forge:' + mcVersion + '-' + forgeVersion
     library (group: 'com.github.denisd3d', name: 'config4j', version: '1.0.1')
 }

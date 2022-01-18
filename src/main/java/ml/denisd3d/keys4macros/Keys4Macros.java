@@ -1,82 +1,73 @@
 package ml.denisd3d.keys4macros;
 
-import net.minecraft.client.KeyMapping;
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.gui.screens.ChatScreen;
+import ml.denisd3d.keys4macros.client.ClientHandler;
+import ml.denisd3d.keys4macros.packets.ServerMacrosPacket;
+import ml.denisd3d.keys4macros.screens.MacrosScreen;
+import ml.denisd3d.keys4macros.server.ServerHandler;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.client.ClientRegistry;
 import net.minecraftforge.client.ConfigGuiHandler;
-import net.minecraftforge.client.event.InputEvent;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.event.TickEvent;
+import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.eventbus.api.EventPriority;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
+import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.minecraftforge.fml.event.lifecycle.FMLDedicatedServerSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import org.lwjgl.glfw.GLFW;
+import net.minecraftforge.network.NetworkDirection;
+import net.minecraftforge.network.NetworkRegistry;
+import net.minecraftforge.network.PacketDistributor;
+import net.minecraftforge.network.simple.SimpleChannel;
 
-import java.io.File;
+import java.util.Optional;
+
+import static net.minecraftforge.network.NetworkRegistry.ACCEPTVANILLA;
 
 @Mod("keys4macros")
 public class Keys4Macros {
-    public static File CONFIG_FILE = new File("config", "keys4macros.toml");
+    private static final String PROTOCOL_VERSION = "1";
+    public static final SimpleChannel NETWORK = NetworkRegistry.newSimpleChannel(
+            new ResourceLocation("keys4macros", "main"),
+            () -> PROTOCOL_VERSION,
+            s -> s.equals(ACCEPTVANILLA) || PROTOCOL_VERSION.equals(s),
+            s -> s.equals(ACCEPTVANILLA) || PROTOCOL_VERSION.equals(s)
+    );
     public static Keys4Macros INSTANCE;
-    public KeyMapping openConfigGuiKeyMapping = new KeyMapping("Open Keys4Macros config", GLFW.GLFW_KEY_K, "key.categories.misc");
-    public ModConfig config;
-    private String command = null;
+    public ClientHandler clientHandler;
+    public ServerHandler serverHandler;
 
     public Keys4Macros() {
-        MinecraftForge.EVENT_BUS.register(this);
-        this.config = new ModConfig(CONFIG_FILE, null).loadAndCorrect();
-
         ModLoadingContext.get().registerExtensionPoint(ConfigGuiHandler.ConfigGuiFactory.class,
                 () -> new ConfigGuiHandler.ConfigGuiFactory(MacrosScreen::new));
+
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setupClient);
+        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setupServer);
+        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
+
         INSTANCE = this;
     }
 
     private void setupClient(FMLClientSetupEvent event) {
-        ClientRegistry.registerKeyBinding(this.openConfigGuiKeyMapping);
+        clientHandler = new ClientHandler();
+        clientHandler.setup();
     }
 
-    @OnlyIn(Dist.CLIENT)
-    @SubscribeEvent(priority = EventPriority.NORMAL, receiveCanceled = true)
-    public void onEvent(InputEvent.KeyInputEvent event) {
-        if (Minecraft.getInstance().screen != null)
-            return;
-
-        if (event.getAction() == GLFW.GLFW_PRESS) {
-            if (Minecraft.getInstance().player == null)
-                return;
-
-            for (ModConfig.MacroEntry macroEntry : this.config.macros) {
-                if (event.getKey() == macroEntry.key && event.getModifiers() == macroEntry.modifiers) {
-                    if (macroEntry.send) {
-                        Minecraft.getInstance().player.chat(macroEntry.command);
-                    } else {
-                        this.command = macroEntry.command;
-                    }
-                }
-            }
-        }
+    private void setupServer(FMLDedicatedServerSetupEvent event) {
+        serverHandler = new ServerHandler();
+        serverHandler.setup();
     }
 
-    @OnlyIn(Dist.CLIENT)
-    @SubscribeEvent(priority = EventPriority.NORMAL, receiveCanceled = true)
-    public void onEvent(TickEvent.ClientTickEvent event) {
-        if (event.phase == TickEvent.Phase.END)
-            return;
-
-        if (this.command != null) {
-            Minecraft.getInstance().setScreen(new ChatScreen(this.command));
-            this.command = null;
-        }
-
-        if (this.openConfigGuiKeyMapping.consumeClick()) {
-            Minecraft.getInstance().setScreen(new MacrosScreen(null, null));
-        }
+    private void setup(FMLCommonSetupEvent event) {
+        NETWORK.registerMessage(0,
+                ServerMacrosPacket.class,
+                ServerMacrosPacket::encode,
+                ServerMacrosPacket::decode,
+                ServerMacrosPacket::handle,
+                Optional.of(NetworkDirection.PLAY_TO_CLIENT));
     }
 }
