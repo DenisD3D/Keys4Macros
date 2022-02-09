@@ -1,14 +1,18 @@
 [![Curseforge page](http://cf.way2muchnoise.eu/title/348754_Download_now!.svg?badge_style=flat)](https://www.curseforge.com/minecraft/mc-mods/keys4macros)
 [![Support Server Invite](https://img.shields.io/discord/586261375970574406.svg?color=7289da&label=Discord%20Support%20Server&logo=discord&style=flat-square)](https://discord.gg/rzzd76c)
 # ![image](https://user-images.githubusercontent.com/35769613/113513508-66e09b80-956a-11eb-90a9-280172115cbf.png)
-Macros for commands & chat messages
+Assign keys to commands
 
 ## Features :
 - Define a key to execute a command or send chat message (called a macro)
 - Mod need to be installed on client only
-- Work fine on server. When you press the key, the command is sent as a chat message and proceeded by the server like if you had typed it.
+- Work fine in multiplayer. When you press the key, the command is sent as a chat message and proceeded by the server like if you had typed it.
 - Create as many macros as you want
-- Make macro to be completed (prefill the chat)
+- Macro can have some variable (changing part like a player name)
+- Server admins can now force macros for players with the mod
+- Create macros for a specific world / server (called location)
+- Edit macro in your default text editor
+- Execute mutiple command in one macro (use \n to separate 2 commands)
 
 ## Create a macro :
 To open the macro configuration screen :
@@ -22,6 +26,10 @@ Next button switch between SEND (directly send the value of the text box) & WRIT
 Last button allow you to delete the macro
 
 You can create as much macro as you want, it come in addition of Minecraft keybindings
+
+## Screenshots :
+![unknown](https://user-images.githubusercontent.com/35769613/153196480-1d0bdd2a-5263-4d46-b4d9-632093084e41.png)
+![unknown](https://user-images.githubusercontent.com/35769613/153196502-242d9ffb-0bfd-4ccb-9419-37a1ff26c566.png)
 
 ## Discord :
 Feel free to join my discord if you need help or fi you have any issue, any questions or any suggestions :
