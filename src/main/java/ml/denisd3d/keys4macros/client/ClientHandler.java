@@ -1,11 +1,11 @@
 package ml.denisd3d.keys4macros.client;
 
-import ml.denisd3d.keys4macros.IMacro;
 import ml.denisd3d.keys4macros.Keys4Macros;
+import ml.denisd3d.keys4macros.client.config.ClientConfig;
+import ml.denisd3d.keys4macros.client.screens.FillMacroScreen;
+import ml.denisd3d.keys4macros.client.screens.MacrosScreen;
 import ml.denisd3d.keys4macros.packets.ServerMacrosPacket;
-import ml.denisd3d.keys4macros.screens.FillMacroScreen;
-import ml.denisd3d.keys4macros.screens.MacrosScreen;
-import ml.denisd3d.keys4macros.server.ServerConfig;
+import ml.denisd3d.keys4macros.structures.*;
 import net.minecraft.client.KeyMapping;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.screens.ChatScreen;
@@ -18,68 +18,60 @@ import net.minecraftforge.fml.common.Mod;
 import org.lwjgl.glfw.GLFW;
 
 import java.io.File;
-import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 @Mod.EventBusSubscriber(Dist.CLIENT)
 public class ClientHandler {
 
-    private static final Pattern pattern = Pattern.compile("\\$\\{(.*?)}");
     public static File CONFIG_FILE = new File("config", "keys4macros.toml");
     public KeyMapping openConfigGuiKeyMapping = new KeyMapping("Open Keys4Macros config", GLFW.GLFW_KEY_K, "key.categories.misc");
     public ClientConfig config;
-    public List<ServerConfig.MacroEntry> serverMacros;
-    public String serverMacrosIp;
-    private String command = null;
+    public String command = null;
+
+    public ClientHandler() {
+        this.config = new ClientConfig(CONFIG_FILE, null).loadAndCorrect();
+        ClientRegistry.registerKeyBinding(this.openConfigGuiKeyMapping);
+    }
 
     @SubscribeEvent(receiveCanceled = true)
-    public static void onEvent(InputEvent.KeyInputEvent event) {
-        if (Minecraft.getInstance().screen != null)
+    public static void onKeyInputEvent(InputEvent.KeyInputEvent event) {
+        if (Minecraft.getInstance().screen != null) // Do not process if player in a gui screen
             return;
 
-        if (event.getAction() == GLFW.GLFW_PRESS) {
-            if (Minecraft.getInstance().player == null)
-                return;
+        if (event.getAction() != GLFW.GLFW_PRESS) // Process only on press
+            return;
 
-            for (ClientConfig.MacroEntry macroEntry : Keys4Macros.INSTANCE.clientHandler.config.macros) {
-                if (event.getKey() == macroEntry.key && event.getModifiers() == macroEntry.modifiers) {
-                    List<String> variables = find_variables(macroEntry.command);
-                    if (variables.size() == 0) {
-                        if (macroEntry.send) {
-                            Minecraft.getInstance().player.chat(macroEntry.command);
-                        } else {
-                            Keys4Macros.INSTANCE.clientHandler.command = macroEntry.command;
-                        }
-                    } else {
-                        Minecraft.getInstance().setScreen(new FillMacroScreen(macroEntry, variables));
-                    }
-                }
-            }
+        if (Minecraft.getInstance().player == null) return;
 
-            for (ServerConfig.MacroEntry macroEntry : Keys4Macros.INSTANCE.clientHandler.serverMacros) {
-                if (event.getKey() == macroEntry.getKey() && event.getModifiers() == macroEntry.getModifiers()) {
-                    List<String> variables = find_variables(macroEntry.command);
-                    if (variables.size() == 0) {
-                        if (macroEntry.send) {
-                            Minecraft.getInstance().player.chat(macroEntry.command);
-                        } else {
-                            Keys4Macros.INSTANCE.clientHandler.command = macroEntry.command;
-                        }
-                    } else {
-                        Minecraft.getInstance().setScreen(new FillMacroScreen(macroEntry, variables));
-                    }
-                }
-            }
+        for (GlobalMacro globalMacro : Keys4Macros.INSTANCE.clientHandler.config.globalMacros.macros) {
+            processMacro(globalMacro, event.getKey(), event.getModifiers());
+        }
+
+        for (LocatedMacro locatedMacro : Keys4Macros.INSTANCE.clientHandler.config.locatedMacros.macros) {
+            processMacro(locatedMacro, event.getKey(), event.getModifiers());
+        }
+
+        for (ForcedMacro forcedMacros : Keys4Macros.INSTANCE.clientHandler.config.forcedMacros.macros) {
+            processMacro(forcedMacros, event.getKey(), event.getModifiers());
+        }
+    }
+
+    public static void processMacro(IMacro macro, int key, int modifiers) {
+        if (macro.getKey() != key || macro.getModifiers() != modifiers || (!macro.getLocation().isEmpty() && !macro.getLocation().equals(ClientUtils.getCurrentLocationOrEmpty())) || !macro.isComplete()) // For macro sent by server
+            return;
+
+        List<String> variables = ClientUtils.findVariablesInCommand(macro.getCommand());
+
+        if (variables.size() != 0) { // Display GUI for filling variables
+            Minecraft.getInstance().setScreen(new FillMacroScreen(macro, variables));
+        } else { // Make Action
+            ClientUtils.processAction(macro.getMode(), macro.getCommand());
         }
     }
 
     @SubscribeEvent
     public static void onEvent(TickEvent.ClientTickEvent event) {
-        if (event.phase == TickEvent.Phase.END)
-            return;
+        if (event.phase != TickEvent.Phase.START) return;
 
         if (Keys4Macros.INSTANCE.clientHandler.command != null) {
             Minecraft.getInstance().setScreen(new ChatScreen(Keys4Macros.INSTANCE.clientHandler.command));
@@ -91,52 +83,27 @@ public class ClientHandler {
         }
     }
 
-    private static List<String> find_variables(String content) {
-        Matcher matcher = pattern.matcher(content);
-        List<String> variables = new ArrayList<>();
-
-        while (matcher.find()) {
-            variables.add(matcher.group(1));
-        }
-        return variables;
-    }
-
-    public void setup() {
-        this.config = new ClientConfig(CONFIG_FILE, null).loadAndCorrect();
-        ClientRegistry.registerKeyBinding(this.openConfigGuiKeyMapping);
-    }
-
-    public void build_variable_and_send_write(IMacro macroEntry, List<String> variables) {
-        Matcher matcher = pattern.matcher(macroEntry.getCommand());
-        StringBuilder stringBuilder = new StringBuilder();
-        Iterator<String> iterator = variables.iterator();
-
-        while (matcher.find()) {
-            matcher.appendReplacement(stringBuilder, iterator.next());
-        }
-        matcher.appendTail(stringBuilder);
-
-        if (macroEntry.getSend()) {
-            if (Minecraft.getInstance().player == null)
-                return;
-            Minecraft.getInstance().player.chat(stringBuilder.toString());
-        } else {
-            this.command = stringBuilder.toString();
-        }
-    }
-
     public void handleServerMacrosPacket(ServerMacrosPacket msg) {
-        if (Minecraft.getInstance().getCurrentServer() != null) {
-            Keys4Macros.INSTANCE.clientHandler.serverMacros = msg.macros;
-            Keys4Macros.INSTANCE.clientHandler.serverMacrosIp = Minecraft.getInstance().getCurrentServer().ip;
-
-            for (ServerConfig.MacroEntry macroEntry : Keys4Macros.INSTANCE.clientHandler.serverMacros) {
-                for (int i = 0; i < Keys4Macros.INSTANCE.clientHandler.config.server_macros.size(); i++) {
-                    if (Keys4Macros.INSTANCE.clientHandler.config.server_macros.get(i).id.intValue() == macroEntry.id && Keys4Macros.INSTANCE.clientHandler.config.server_macros.get(i).server.equals(Keys4Macros.INSTANCE.clientHandler.serverMacrosIp)) {
-                        macroEntry.client_key = Keys4Macros.INSTANCE.clientHandler.config.server_macros.get(i).key;
-                        macroEntry.client_modifiers = Keys4Macros.INSTANCE.clientHandler.config.server_macros.get(i).modifiers;
-                    }
-                }
+        for (ServerMacro serverMacro : msg.macros) {
+            ForcedMacro forcedMacro = ClientUtils.getForcedMacroById(Keys4Macros.INSTANCE.clientHandler.config.forcedMacros.macros, serverMacro.getId());
+            if (forcedMacro != null && forcedMacro.getLocation().equals(ClientUtils.getCurrentLocationOrEmpty())) {
+                forcedMacro.setCommand(serverMacro.getCommand());
+                forcedMacro.setMode(serverMacro.getMode());
+                forcedMacro.setDefaultKey(serverMacro.getKey());
+                forcedMacro.setDefaultModifiers(serverMacro.getModifiers());
+                forcedMacro.setComplete(true);
+            } else {
+                ForcedMacro newForcedMacro = new ForcedMacro();
+                newForcedMacro.setId(serverMacro.getId());
+                newForcedMacro.setCommand(serverMacro.getCommand());
+                newForcedMacro.setMode(serverMacro.getMode());
+                newForcedMacro.setKey(serverMacro.getKey());
+                newForcedMacro.setDefaultKey(serverMacro.getKey());
+                newForcedMacro.setModifiers(serverMacro.getModifiers());
+                newForcedMacro.setDefaultModifiers(serverMacro.getModifiers());
+                newForcedMacro.setLocation(ClientUtils.getCurrentLocationOrEmpty());
+                newForcedMacro.setComplete(true);
+                Keys4Macros.INSTANCE.clientHandler.config.forcedMacros.macros.add(newForcedMacro);
             }
         }
     }

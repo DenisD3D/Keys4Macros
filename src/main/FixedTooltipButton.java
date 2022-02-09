@@ -1,4 +1,4 @@
-package ml.denisd3d.keys4macros.screens;
+package ml.denisd3d.keys4macros.client.screens;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import net.minecraft.client.gui.components.Button;
