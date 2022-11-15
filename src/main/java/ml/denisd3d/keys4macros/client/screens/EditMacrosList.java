@@ -13,7 +13,7 @@ import net.minecraft.client.gui.components.ContainerObjectSelectionList;
 import net.minecraft.client.gui.components.events.GuiEventListener;
 import net.minecraft.client.gui.narration.NarratableEntry;
 import net.minecraft.client.gui.screens.ConfirmScreen;
-import net.minecraft.network.chat.TextComponent;
+import net.minecraft.network.chat.Component;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.client.settings.KeyModifier;
@@ -109,7 +109,7 @@ public class EditMacrosList extends ContainerObjectSelectionList<EditMacrosList.
                 case 4 -> this.activeModifier = KeyModifier.ALT;
             }
 
-            this.commandBox = new DoubleClickableEditBox(EditMacrosList.this.minecraft.font, 0, 0, 180, 18, new TextComponent("Command"), doubleClickableEditBox -> {
+            this.commandBox = new DoubleClickableEditBox(EditMacrosList.this.minecraft.font, 0, 0, 180, 18, Component.literal("Command"), doubleClickableEditBox -> {
                 if (macro.isLocked())
                     return;
                 EditMacrosList.this.minecraft.setScreen(new EditMacroInExternalEditorScreen(EditMacrosList.this.macrosScreen, this));
@@ -119,8 +119,8 @@ public class EditMacrosList extends ContainerObjectSelectionList<EditMacrosList.
             this.commandBox.moveCursorToStart();
 
             this.changeButton = new Button(0, 0, 75 + 20, 20, this.activeModifier.getCombinedName(this.key, () -> this.key.getDisplayName()), pButton -> EditMacrosList.this.macrosScreen.selectedMacro = this);
-            this.modeButton = new Button(0, 0, 40, 20, new TextComponent(macro.getMode().toString()), pButton -> pButton.setMessage(new TextComponent(ProcessMode.valueOf(pButton.getMessage().getString()).next().toString())));
-            this.deleteButton = new Button(0, 0, 20, 20, new TextComponent(this.macro.isLocked() && this.macro.isComplete() ? "R" : "X"), pButton -> EditMacrosList.this.minecraft.setScreen(new ConfirmScreen(t -> {
+            this.modeButton = new Button(0, 0, 40, 20, Component.literal(macro.getMode().toString()), pButton -> pButton.setMessage(Component.literal(ProcessMode.valueOf(pButton.getMessage().getString()).next().toString())));
+            this.deleteButton = new Button(0, 0, 20, 20, Component.literal(this.macro.isLocked() && this.macro.isComplete() ? "R" : "X"), pButton -> EditMacrosList.this.minecraft.setScreen(new ConfirmScreen(t -> {
                 EditMacrosList.this.minecraft.setScreen(EditMacrosList.this.macrosScreen);
                 if (t) {
                     if (this.macro.isLocked() && this.macro.isComplete()) {
@@ -135,14 +135,14 @@ public class EditMacrosList extends ContainerObjectSelectionList<EditMacrosList.
                         EditMacrosList.this.macrosScreen.macroDeleter.accept(this.macro);
                     }
                 }
-            }, new TextComponent(this.macro.isLocked() && this.macro.isComplete() ? "Are you sure you want to reset this macro?" : "Are you sure to delete this macro?"), new TextComponent("Command: " + this.commandBox.getValue() + "\nKey: ").append(this.activeModifier.getCombinedName(this.key, () -> this.key.getDisplayName())).append(new TextComponent("\nMode: " + macro.getMode())))));
+            }, Component.literal(this.macro.isLocked() && this.macro.isComplete() ? "Are you sure you want to reset this macro?" : "Are you sure to delete this macro?"), Component.literal("Command: " + this.commandBox.getValue() + "\nKey: ").append(this.activeModifier.getCombinedName(this.key, () -> this.key.getDisplayName())).append(Component.literal("\nMode: " + macro.getMode())))));
 
             if (this.macro.isLocked()) {
                 this.commandBox.active = false;
                 this.commandBox.setEditable(false);
                 this.modeButton.active = false;
                 this.commandBox.setOnTooltip((pButton, pPoseStack, pMouseX, pMouseY) -> {
-                    EditMacrosList.this.macrosScreen.renderTooltip(pPoseStack, new TextComponent("This macro is locked by the server you are on"), pMouseX, pMouseY);
+                    EditMacrosList.this.macrosScreen.renderTooltip(pPoseStack, Component.literal("This macro is locked by the server you are on"), pMouseX, pMouseY);
                 });
             }
 
@@ -176,7 +176,7 @@ public class EditMacrosList extends ContainerObjectSelectionList<EditMacrosList.
             this.changeButton.y = pTop;
             this.changeButton.setMessage(this.activeModifier.getCombinedName(this.key, () -> this.key.getDisplayName()));
             if (EditMacrosList.this.macrosScreen.selectedMacro == this) {
-                this.changeButton.setMessage((new TextComponent("> ")).append(this.changeButton.getMessage().copy().withStyle(ChatFormatting.YELLOW)).append(" <").withStyle(ChatFormatting.YELLOW));
+                this.changeButton.setMessage((Component.literal("> ")).append(this.changeButton.getMessage().copy().withStyle(ChatFormatting.YELLOW)).append(" <").withStyle(ChatFormatting.YELLOW));
             }
             this.changeButton.render(pPoseStack, pMouseX, pMouseY, pPartialTick);
 
@@ -208,7 +208,7 @@ public class EditMacrosList extends ContainerObjectSelectionList<EditMacrosList.
                 this.commandBox.active = false;
                 this.commandBox.setEditable(false);
                 this.commandBox.setOnTooltip((pButton, pPoseStack, pMouseX, pMouseY) -> {
-                    EditMacrosList.this.macrosScreen.renderTooltip(pPoseStack, new TextComponent("Macro is under edit in external editor"), pMouseX, pMouseY);
+                    EditMacrosList.this.macrosScreen.renderTooltip(pPoseStack, Component.literal("Macro is under edit in external editor"), pMouseX, pMouseY);
                 });
             } else {
                 this.commandBox.active = true;

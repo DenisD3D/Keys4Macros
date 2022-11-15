@@ -4,23 +4,16 @@ import com.mojang.blaze3d.platform.InputConstants;
 import com.mojang.blaze3d.vertex.PoseStack;
 import ml.denisd3d.keys4macros.Keys4Macros;
 import ml.denisd3d.keys4macros.structures.IMacro;
-import ml.denisd3d.keys4macros.structures.LocatedMacro;
-import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.screens.ConfirmScreen;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
-import net.minecraft.network.chat.TextComponent;
-import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.client.settings.KeyModifier;
 
 import javax.annotation.Nonnull;
-import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 import java.util.concurrent.Callable;
 import java.util.function.Consumer;
 
@@ -54,19 +47,19 @@ public class EditMacrosScreen extends Screen {
         this.addWidget(this.macrosList);
 
         int btn_width = (this.width - 5 * 10) / 4;
-        this.addRenderableWidget(new Button(10, this.height - 29, btn_width, 20, new TranslatableComponent("gui.done"), (button) -> {
+        this.addRenderableWidget(new Button(10, this.height - 29, btn_width, 20, Component.translatable("gui.done"), (button) -> {
             this.save();
             this.onClose();
         }));
-        this.addRenderableWidget(new Button(10 * 2 + btn_width, this.height - 29, btn_width, 20, new TranslatableComponent("gui.cancel"), (button) -> this.onClose()));
-        this.addRenderableWidget(new Button(10 * 3 + btn_width * 2, this.height - 29, btn_width, 20, new TextComponent("New Macro"), (button) -> {
+        this.addRenderableWidget(new Button(10 * 2 + btn_width, this.height - 29, btn_width, 20, Component.translatable("gui.cancel"), (button) -> this.onClose()));
+        this.addRenderableWidget(new Button(10 * 3 + btn_width * 2, this.height - 29, btn_width, 20, Component.literal("New Macro"), (button) -> {
             try {
                 this.macrosList.newEntry(newMacroSupplier.call());
             } catch (Exception e) {
                 e.printStackTrace();
             }
         }));
-        this.addRenderableWidget(new Button(10 * 4 + btn_width * 3, this.height - 29, btn_width, 20, new TextComponent("Cheat sheet"), (button) -> {
+        this.addRenderableWidget(new Button(10 * 4 + btn_width * 3, this.height - 29, btn_width, 20, Component.literal("Cheat sheet"), (button) -> {
             assert this.minecraft != null;
             this.minecraft.setScreen(new CheatSheetScreen(this));
         }));
@@ -79,7 +72,7 @@ public class EditMacrosScreen extends Screen {
                 this.minecraft.setScreen(new ConfirmScreen(t -> {
                     this.minecraft.setScreen(this);
                     if (t) this.onClose();
-                }, new TextComponent("Are you sure you want to exit macros settings without saving ?"), new TextComponent("")));
+                }, Component.literal("Are you sure you want to exit macros settings without saving ?"), Component.literal("")));
                 return true;
             } else {
                 return super.keyPressed(pKeyCode, pScanCode, pModifiers);

@@ -11,7 +11,7 @@ import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.components.ContainerObjectSelectionList;
 import net.minecraft.client.gui.components.events.GuiEventListener;
 import net.minecraft.client.gui.narration.NarratableEntry;
-import net.minecraft.network.chat.TextComponent;
+import net.minecraft.network.chat.Component;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import org.jetbrains.annotations.NotNull;
@@ -58,8 +58,8 @@ public class AllLocationsList extends ContainerObjectSelectionList<AllLocationsL
         private final Button button;
 
         public Entry(String location) {
-            this.button = new Button(0, 0, 150, 20, new TextComponent(location), pButton -> AllLocationsList.this.minecraft.setScreen(new EditMacrosScreen(
-                    AllLocationsList.this.allLocationsScreen, new TextComponent(location + " Macros Settings"),
+            this.button = new Button(0, 0, 150, 20, Component.literal(location), pButton -> AllLocationsList.this.minecraft.setScreen(new EditMacrosScreen(
+                    AllLocationsList.this.allLocationsScreen, Component.literal(location + " Macros Settings"),
                     ClientUtils.getMacrosForLocation(location),
                     () -> {
                         LocatedMacro locatedMacro = new LocatedMacro();

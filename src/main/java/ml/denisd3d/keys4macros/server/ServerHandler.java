@@ -34,7 +34,7 @@ public class ServerHandler {
 
         List<ServerMacro> filteredEntries = Keys4Macros.INSTANCE.serverHandler.config.serverMacros.macros.stream().filter(macroEntry -> !macroEntry.getCommand().isEmpty()).toList();
         if (filteredEntries.size() != 0) {
-            Keys4Macros.NETWORK.send(PacketDistributor.PLAYER.with(() -> (ServerPlayer) event.getPlayer()), new ServerMacrosPacket(filteredEntries));
+            Keys4Macros.NETWORK.send(PacketDistributor.PLAYER.with(() -> (ServerPlayer) event.getEntity()), new ServerMacrosPacket(filteredEntries));
         }
     }
 

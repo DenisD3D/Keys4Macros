@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Keys4Gamemode.iml" filepath="$PROJECT_DIR$/Keys4Gamemode.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Keys4Gamemode.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Keys4Gamemode.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Keys4Gamemode.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Keys4Gamemode.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Keys4Macros.iml" filepath="$PROJECT_DIR$/.idea/modules/Keys4Macros.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Keys4Macros.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Keys4Macros.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Keys4Macros.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Keys4Macros.test.iml" />
     </modules>
   </component>
 </project>

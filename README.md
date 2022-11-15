@@ -12,7 +12,7 @@ Assign keys to commands
 - Server admins can now force macros for players with the mod
 - Create macros for a specific world / server (called location)
 - Edit macro in your default text editor
-- Execute mutiple command in one macro (use \n to separate 2 commands)
+- Execute multiple command in one macro (use \n to separate 2 commands)
 
 ## Create a macro :
 To open the macro configuration screen :

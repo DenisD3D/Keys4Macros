@@ -10,8 +10,8 @@ import net.minecraft.client.KeyMapping;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.screens.ChatScreen;
 import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.client.ClientRegistry;
 import net.minecraftforge.client.event.InputEvent;
+import net.minecraftforge.client.event.RegisterKeyMappingsEvent;
 import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -30,11 +30,15 @@ public class ClientHandler {
 
     public ClientHandler() {
         this.config = new ClientConfig(CONFIG_FILE, null).loadAndCorrect();
-        ClientRegistry.registerKeyBinding(this.openConfigGuiKeyMapping);
+    }
+
+    @SubscribeEvent
+    public void onKeyInput(RegisterKeyMappingsEvent event) {
+        event.register(this.openConfigGuiKeyMapping);
     }
 
     @SubscribeEvent(receiveCanceled = true)
-    public static void onKeyInputEvent(InputEvent.KeyInputEvent event) {
+    public static void onKeyInputEvent(InputEvent.Key event) {
         if (Minecraft.getInstance().screen != null) // Do not process if player in a gui screen
             return;
 

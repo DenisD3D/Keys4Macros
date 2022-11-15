@@ -9,8 +9,7 @@ import ml.denisd3d.keys4macros.structures.LocatedMacro;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.screens.Screen;
-import net.minecraft.network.chat.TextComponent;
-import net.minecraft.network.chat.TranslatableComponent;
+import net.minecraft.network.chat.Component;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
@@ -22,25 +21,25 @@ public class MacrosScreen extends Screen {
     private final Screen parentScreen;
 
     public MacrosScreen(Minecraft ignoredMinecraft, Screen parent) {
-        super(new TextComponent("Keys4Macros Config"));
+        super(Component.literal("Keys4Macros Config"));
         this.parentScreen = parent;
     }
 
     @Override
     public void init() {
-        this.addRenderableWidget(new Button(this.width / 2 - 75, this.height / 2 - 40, 150, 20, new TextComponent("Global Macros"), (button) -> {
+        this.addRenderableWidget(new Button(this.width / 2 - 75, this.height / 2 - 40, 150, 20, Component.literal("Global Macros"), (button) -> {
             if (this.minecraft != null) {
-                this.minecraft.setScreen(new EditMacrosScreen(this, new TextComponent("Global Macros Settings"), Keys4Macros.INSTANCE.clientHandler.config.globalMacros.macros, () -> {
+                this.minecraft.setScreen(new EditMacrosScreen(this, Component.literal("Global Macros Settings"), Keys4Macros.INSTANCE.clientHandler.config.globalMacros.macros, () -> {
                     GlobalMacro globalMacro = new GlobalMacro();
                     Keys4Macros.INSTANCE.clientHandler.config.globalMacros.macros.add(globalMacro);
                     return globalMacro;
                 }, macro -> Keys4Macros.INSTANCE.clientHandler.config.globalMacros.macros.remove(macro)));
             }
         }));
-        Button this_location_macros = new Button(this.width / 2 - 75, this.height / 2 - 10, 150, 20, new TextComponent("This location Macros"), (button) -> {
+        Button this_location_macros = new Button(this.width / 2 - 75, this.height / 2 - 10, 150, 20, Component.literal("This location Macros"), (button) -> {
             if (this.minecraft != null) {
                 this.minecraft.setScreen(new EditMacrosScreen(this,
-                        new TextComponent(ClientUtils.getCurrentLocationOrEmpty() + " Macros Settings"),
+                        Component.literal(ClientUtils.getCurrentLocationOrEmpty() + " Macros Settings"),
                         ClientUtils.getMacrosForLocation(ClientUtils.getCurrentLocationOrEmpty()),
                         () -> {
                             LocatedMacro locatedMacro = new LocatedMacro();
@@ -61,12 +60,12 @@ public class MacrosScreen extends Screen {
             this_location_macros.active = false;
         }
         this.addRenderableWidget(this_location_macros);
-        this.addRenderableWidget(new Button(this.width / 2 - 75, this.height / 2 + 20, 150, 20, new TextComponent("All locations Macros"), (button) -> {
+        this.addRenderableWidget(new Button(this.width / 2 - 75, this.height / 2 + 20, 150, 20, Component.literal("All locations Macros"), (button) -> {
             if (this.minecraft != null) {
                 this.minecraft.setScreen(new AllLocationsScreen(this));
             }
         }));
-        this.addRenderableWidget(new Button(this.width / 2 - 75, this.height - 29, 150, 20, new TranslatableComponent("gui.done"), (button) -> this.onClose()));
+        this.addRenderableWidget(new Button(this.width / 2 - 75, this.height - 29, 150, 20, Component.translatable("gui.done"), (button) -> this.onClose()));
     }
 
     @Override

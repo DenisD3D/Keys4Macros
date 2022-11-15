@@ -3,8 +3,7 @@ package ml.denisd3d.keys4macros.client.screens;
 import com.mojang.blaze3d.vertex.PoseStack;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.screens.Screen;
-import net.minecraft.network.chat.TextComponent;
-import net.minecraft.network.chat.TranslatableComponent;
+import net.minecraft.network.chat.Component;
 import org.apache.commons.lang3.StringEscapeUtils;
 import org.jetbrains.annotations.NotNull;
 
@@ -23,25 +22,25 @@ public class EditMacroInExternalEditorScreen extends Screen {
     private final EditMacrosList.Entry currentMacro;
 
     public EditMacroInExternalEditorScreen(EditMacrosScreen editMacrosScreen, EditMacrosList.Entry currentMacro) {
-        super(new TextComponent("Editing macro in external editor"));
+        super(Component.literal("Editing macro in external editor"));
         this.editMacrosScreen = editMacrosScreen;
         this.currentMacro = currentMacro;
     }
 
     @Override
     protected void init() {
-        this.addRenderableWidget(new Button(this.width / 2 - 75, this.height / 2 - 40, 150, 20, new TextComponent("Open external editor"), pButton -> {
+        this.addRenderableWidget(new Button(this.width / 2 - 75, this.height / 2 - 40, 150, 20, Component.literal("Open external editor"), pButton -> {
             try {
                 openExternal(getOrCreateMacroFile());
             } catch (IOException e) {
                 e.printStackTrace();
             }
         }));
-        this.addRenderableWidget(new Button(this.width / 2 - 75, this.height / 2 - 10, 150, 20, new TextComponent("Import changes"), pButton -> {
+        this.addRenderableWidget(new Button(this.width / 2 - 75, this.height / 2 - 10, 150, 20, Component.literal("Import changes"), pButton -> {
             reloadAllExternalMacros();
             this.onClose();
         }));
-        this.addRenderableWidget(new Button(this.width / 2 - 75, this.height / 2 + 20, 150, 20, new TranslatableComponent("gui.back"), pButton -> {
+        this.addRenderableWidget(new Button(this.width / 2 - 75, this.height / 2 + 20, 150, 20, Component.translatable("gui.back"), pButton -> {
             this.onClose();
         }));
     }
@@ -98,7 +97,7 @@ public class EditMacroInExternalEditorScreen extends Screen {
 
         this.renderBackground(pPoseStack);
         drawCenteredString(pPoseStack, this.font, this.title, this.width / 2, 8, 16777215);
-        drawCenteredString(pPoseStack, this.font, new TranslatableComponent("gui.back").getString() + " : return to macros list without importing change.", this.width / 2, this.height - 39, 16777215);
+        drawCenteredString(pPoseStack, this.font, Component.literal("gui.back").getString() + " : return to macros list without importing change.", this.width / 2, this.height - 39, 16777215);
         drawCenteredString(pPoseStack, this.font, "They can be imported later from this screen", this.width / 2, this.height - 29, 16777215);
 
         super.render(pPoseStack, pMouseX, pMouseY, pPartialTick);

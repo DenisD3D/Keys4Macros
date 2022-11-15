@@ -62,7 +62,7 @@ public class ClientUtils {
             switch (mode) {
                 case SEND -> {
                     if (Minecraft.getInstance().player != null) {
-                        Minecraft.getInstance().player.chat(message.replace("\\\\n", "\\n"));
+                        Minecraft.getInstance().player.chatSigned(message.replace("\\\\n", "\\n"), null);
                     }
                 }
                 case WRITE -> Keys4Macros.INSTANCE.clientHandler.command = message.replace("\\\\n", "\\n");

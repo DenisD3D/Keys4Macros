@@ -7,13 +7,11 @@ import ml.denisd3d.keys4macros.structures.ForcedMacro;
 import ml.denisd3d.keys4macros.structures.LocatedMacro;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.screens.Screen;
-import net.minecraft.network.chat.TextComponent;
-import net.minecraft.network.chat.TranslatableComponent;
+import net.minecraft.network.chat.Component;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
 import javax.annotation.Nonnull;
-import java.util.List;
 import java.util.stream.Stream;
 
 @OnlyIn(Dist.CLIENT)
@@ -24,7 +22,7 @@ public class AllLocationsScreen extends Screen {
     private boolean isInitialised = false;
 
     public AllLocationsScreen(Screen parent) {
-        super(new TextComponent("All Macros Settings"));
+        super(Component.literal("All Macros Settings"));
         this.parentScreen = parent;
     }
 
@@ -42,7 +40,7 @@ public class AllLocationsScreen extends Screen {
 
         this.addWidget(this.allLocationsList);
 
-        this.addRenderableWidget(new Button(this.width / 2 - 75, this.height - 29, 150, 20, new TranslatableComponent("gui.done"), (button) -> this.onClose()));
+        this.addRenderableWidget(new Button(this.width / 2 - 75, this.height - 29, 150, 20, Component.translatable("gui.done"), (button) -> this.onClose()));
     }
 
     @Override

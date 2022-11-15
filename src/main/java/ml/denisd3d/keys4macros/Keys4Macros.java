@@ -5,7 +5,7 @@ import ml.denisd3d.keys4macros.client.screens.MacrosScreen;
 import ml.denisd3d.keys4macros.packets.ServerMacrosPacket;
 import ml.denisd3d.keys4macros.server.ServerHandler;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraftforge.client.ConfigGuiHandler;
+import net.minecraftforge.client.ConfigScreenHandler;
 import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
@@ -34,8 +34,8 @@ public class Keys4Macros {
     public ServerHandler serverHandler;
 
     public Keys4Macros() {
-        ModLoadingContext.get().registerExtensionPoint(ConfigGuiHandler.ConfigGuiFactory.class,
-                () -> new ConfigGuiHandler.ConfigGuiFactory(MacrosScreen::new));
+        ModLoadingContext.get().registerExtensionPoint(ConfigScreenHandler.ConfigScreenFactory.class,
+                () -> new ConfigScreenHandler.ConfigScreenFactory(MacrosScreen::new));
 
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setupClient);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setupServer);

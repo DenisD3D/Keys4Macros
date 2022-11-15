@@ -2,22 +2,17 @@ package ml.denisd3d.keys4macros.client.screens;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.vertex.PoseStack;
-import ml.denisd3d.keys4macros.Keys4Macros;
 import ml.denisd3d.keys4macros.client.ClientUtils;
 import ml.denisd3d.keys4macros.structures.IMacro;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.client.renderer.GameRenderer;
-import net.minecraft.network.chat.TextComponent;
-import net.minecraft.network.chat.TranslatableComponent;
+import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 
 import javax.annotation.Nonnull;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
-import java.util.Set;
-import java.util.stream.Collectors;
 
 public class FillMacroScreen extends Screen {
     protected static final ResourceLocation BACKGROUND_LOCATION = new ResourceLocation("keys4macros", "textures/gui/fill_macro.png");
@@ -26,7 +21,7 @@ public class FillMacroScreen extends Screen {
     private FillMacroList fillMacrosList;
 
     public FillMacroScreen(IMacro macro, List<String> variables) {
-        super(new TextComponent("Fill macro variables"));
+        super(Component.literal("Fill macro variables"));
         this.macro = macro;
         this.variables = variables;
     }
@@ -36,14 +31,14 @@ public class FillMacroScreen extends Screen {
         this.fillMacrosList = new FillMacroList(this.minecraft, this);
         this.addWidget(this.fillMacrosList);
 
-        this.addRenderableWidget(new Button(this.width / 2 - 75 - 10, this.height / 2 + 166 / 2 - 24, 75, 20, new TranslatableComponent(this.macro.getMode().toString()), (button) -> {
+        this.addRenderableWidget(new Button(this.width / 2 - 75 - 10, this.height / 2 + 166 / 2 - 24, 75, 20, Component.translatable(this.macro.getMode().toString()), (button) -> {
             HashMap<String, String> map = new HashMap<>();
             this.fillMacrosList.children().forEach(entry -> map.put(entry.getName(), entry.getValue()));
             String formattedCommand = ClientUtils.replaceVariablesInCommand(macro.getCommand(), map);
             ClientUtils.processAction(macro.getMode(), formattedCommand);
             this.onClose();
         }));
-        this.addRenderableWidget(new Button(this.width / 2 + 10, this.height / 2 + 166 / 2 - 24, 75, 20, new TextComponent("Cancel"), (button) -> this.onClose()));
+        this.addRenderableWidget(new Button(this.width / 2 + 10, this.height / 2 + 166 / 2 - 24, 75, 20, Component.literal("Cancel"), (button) -> this.onClose()));
     }
 
     @Override

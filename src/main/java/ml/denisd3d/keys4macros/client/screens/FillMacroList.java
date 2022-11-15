@@ -7,7 +7,7 @@ import net.minecraft.client.gui.components.ContainerObjectSelectionList;
 import net.minecraft.client.gui.components.EditBox;
 import net.minecraft.client.gui.components.events.GuiEventListener;
 import net.minecraft.client.gui.narration.NarratableEntry;
-import net.minecraft.network.chat.TextComponent;
+import net.minecraft.network.chat.Component;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import org.jetbrains.annotations.NotNull;
@@ -66,7 +66,7 @@ public class FillMacroList extends ContainerObjectSelectionList<FillMacroList.En
                 FillMacroList.this.maxNameWidth = i;
             }
 
-            this.valueBox = new EditBox(FillMacroList.this.minecraft.font, 0, 0, 155, 18, new TextComponent("Value"));
+            this.valueBox = new EditBox(FillMacroList.this.minecraft.font, 0, 0, 155, 18, Component.literal("Value"));
             this.valueBox.setMaxLength(256);
             this.valueBox.setValue(default_value);
         }

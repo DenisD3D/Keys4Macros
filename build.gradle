@@ -82,7 +82,9 @@ dependencies {
         }
     } // FIX DCEVM
     minecraft 'net.minecraftforge:forge:' + mcVersion + '-' + forgeVersion
-    library (group: 'com.github.denisd3d', name: 'config4j', version: '1.0.1')
+    library(group: 'com.github.denisd3d', name: 'config4j', version: '1.0.1') {
+        exclude(group: 'com.electronwill.night-config', module: 'core')
+    }
 }
 
 shadowJar {
@@ -113,7 +115,7 @@ jar {
 }
 
 reobf {
-    shadowJar { }
+    shadowJar {}
 }
 
 jar.finalizedBy('reobfJar')
